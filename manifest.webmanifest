@@ -1,0 +1,14 @@
+{
+    "name": "Galerie PWA",
+    "icons": [
+    {
+        "src": "images/icons/icon-192x192.png",
+        "sizes": "72x72",
+        "type": "image/png"
+    },
+ {
+    "src": "images/icons/icon-512x512.png",
+    "sizes": "96x96",
+    "type": "image/png"
+ }]
+}

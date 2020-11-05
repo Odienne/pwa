@@ -8,6 +8,7 @@ $(document).ready(() => {
 
 
 function searchImages() {
+    console.log("ready")
 
     const search = $('.js-searchQuery-value').val();
     if (!search) return;
