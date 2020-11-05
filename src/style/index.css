@@ -3,6 +3,9 @@ body {
   position: relative;
 }
 
+.pwa {
+  padding-bottom: 36px;
+}
 .pwa .pwa-search-form .btn {
   color: #fff;
   -webkit-transition: 0.5s ease;

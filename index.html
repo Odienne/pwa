@@ -48,7 +48,7 @@
         </div>
     </div>
 </header>
-<main class="container-fluid pb-5 pwa">
+<main class="container-fluid p-10 pwa">
     <div class="container">
         <div class="d-flex pwa-search-form mb-5">
             <input class="col-sm-4 form-control m-auto ml-sm-2  mr-xs-4  mr-sm-2 js-searchQuery-value" type="text"
@@ -59,16 +59,25 @@
                     class="d-none d-sm-inline-block">Search</span>
             </button>
         </div>
-        <div class="row pwa-photos" id="pwa-photos">
+        <div>
+            <p class="text-muted col-12 text-center" id="js-searchTitle">Lancez une recherche pour afficher des images.</p>
+            <div class="row pwa-photos p-5" id="js-pwa-photos">
+
+            </div>
         </div>
     </div>
 </main>
+
+<div class="pwa-spinner spinner-border text-warning" role="status">
+    <span class="sr-only">Loading...</span>
+</div>
+
 <footer class="text-muted">
     <div class="container">
         <p class="float-right">
             <a href="#">Coucou</a>
         </p>
-        <p id="test">Odienne Adam - odienne.adam@gmail.com</p>
+        <p>Odienne Adam - odienne.adam@gmail.com</p>
     </div>
 </footer>
 
@@ -93,6 +102,5 @@ h0I7Iblaacawc"
         crossorigin="anonymous"
 ></script>
 
-<div class="pwa-spinner spinner-border text-warning"></div>
 </body>
 </html>
