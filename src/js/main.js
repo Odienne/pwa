@@ -8,28 +8,22 @@ $(document).ready(() => {
 
 
 function searchImages() {
-    console.log("ready")
-
     const search = $('.js-searchQuery-value').val();
     if (!search) return;
 
     const endQuery = `&query=${search}&per_page=10&orientation=squarish`;
     const UNSPLASH_API = 'https://api.unsplash.com/search/photos?client_id=' + KEYS.ACCESS_KEY + endQuery;
 
-
     $('.pwa-spinner').show();
-// Making a POST request using an axios instance from a connected library
     axios.get(UNSPLASH_API)
-        // Handle a successful response from the server
         .then(response => {
             // Getting a data object from response that contains the necessary data from the server
             const data = response.data;
             console.log('data', data);
             let images = '';
-            data.results.map((photo) => {
-                console.log(photo)
-                let date = new Date(photo.created_at)
-                images += '            <div class="col-md-4">\n' +
+            data.results.map(photo => {
+                let date = new Date(photo.created_at);
+                images += '    <div class="col-md-4">\n' +
                     '                <div class="card thumbnail mb-4 shadow-sm">\n' +
                     '                   <img class="img-fluid" src="' + photo.urls.small + '" alt="' + photo.description + '">\n' +
                     '                    <div class="card-body">\n' +
@@ -48,8 +42,5 @@ function searchImages() {
             })
             $(".pwa-photos").html(images)
             $('.pwa-spinner').hide();
-
-
-        }).catch(error => console.error('On create student error', error));
+        }).catch(error => console.error('Error while fetching your images', error));
 }
-
