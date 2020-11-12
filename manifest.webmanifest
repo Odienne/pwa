@@ -1,0 +1,70 @@
+{
+    "name": "Galerie PWA",
+    "short_name": "PWA",
+    "description": "Small PWA project",
+    "scope": "/",
+    "lang": "fr-FR",
+    "start_url": "/",
+    "display": "minimal-ui",
+    "theme_color": "#456123",
+    "background_color": "#456123",
+
+    "icons":
+    [
+        {
+            "src": "src/images/icons/16x16.ico",
+            "sizes": "16x16",
+            "type": "image/ico"
+        },
+        {
+            "src": "src/images/icons/24x24.ico",
+            "sizes": "24x24",
+            "type": "image/ico"
+        },
+        {
+            "src": "src/images/icons/32x32.ico",
+            "sizes": "32x32",
+            "type": "image/ico"
+        },
+        {
+            "src": "src/images/icons/48x48.ico",
+            "sizes": "48x48",
+            "type": "image/ico"
+        },
+        {
+            "src": "src/images/icons/64x64.ico",
+            "sizes": "64x64",
+            "type": "image/ico"
+        },
+        {
+            "src": "src/images/icons/96x96.ico",
+            "sizes": "96x96",
+            "type": "image/ico"
+        },
+        {
+            "src": "src/images/icons/128x128.ico",
+            "sizes": "128x128",
+            "type": "image/ico"
+        },
+        {
+            "src": "src/images/icons/192x192.ico",
+            "sizes": "144x144 192x192",
+            "type": "image/ico"
+        },
+         {
+            "src": "src/images/icons/192x192.ico",
+            "sizes": "144x144",
+            "type": "image/ico"
+        },
+        {
+            "src": "src/images/icons/256x256.ico",
+            "sizes": "256x256",
+            "type": "image/ico"
+        },
+        {
+            "src": "src/images/icons/5512x512.png",
+            "sizes": "5512x512",
+            "type": "image/png"
+        }
+    ]
+}
