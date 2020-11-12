@@ -5,7 +5,7 @@ self.addEventListener("fetch", event => {
 
 // Si la requête est bien celle que l'on
 // veut simuler
-if (requestUrl.pathname === "/toto") {
+if (requestUrl.pathname === "/test.html") {
     // Alors, on modifie la réponse
     event.respondWith(
         // Ici je crée une réponse à partir
