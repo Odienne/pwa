@@ -16,6 +16,7 @@ function searchImages() {
 
     $('.pwa-spinner').show();
     fetch(UNSPLASH_API).then(response => {
+        console.log(response)
         // Getting a data object from response that contains the necessary data from the server
         const data = response.data;
         let title = '<p>Aucun résultat pour la recherche <span class="font-weight-bold">"' + search + '"</span></p>';
