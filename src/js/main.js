@@ -18,8 +18,7 @@ function searchImages() {
     fetch(UNSPLASH_API).then(response => {
         console.log(response)
         // Getting a data object from response that contains the necessary data from the server
-        response = JSON.parse(response)
-        const data = response.data;
+        const data = response.blob().data;
         let title = '<p>Aucun résultat pour la recherche <span class="font-weight-bold">"' + search + '"</span></p>';
         let images = '';
 
