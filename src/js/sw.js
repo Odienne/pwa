@@ -1,11 +1,10 @@
-
-self.addEventListener("install", event => {
-    console.log("install successful")
+self.addEventListener('install', event => {
+    event.waitUntil(Promise.resolve('Install phase succeed'));
 });
 
-self.addEventListener("fetch", event => {
-    console.log("test")
-    const requestUrl = new URL(
-        event.request.url
+selfg.addEventListener('fetch', function(event) {
+    event.respondWith(
+        // la magie opère ici
+        console.log("test")
     );
 });
