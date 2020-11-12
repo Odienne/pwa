@@ -1,4 +1,5 @@
 self.addEventListener('install', event => {
+    console.log('install')
     event.waitUntil(Promise.resolve('Install phase succeed'));
 });
 
