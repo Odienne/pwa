@@ -19,6 +19,7 @@ function searchImages() {
         console.log(response.json())
         response.json()
     }).then(response => {
+            console.log(response)
             console.log(response.body)
             // Getting a data object from response that contains the necessary data from the server
             const data = response.data;
