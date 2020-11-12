@@ -48,8 +48,10 @@
     <div class="container">
         <div class="row mb-5">
             <form class="form-inline mr-auto mb-4 pwa-search-form">
-                <input class="form-control mr-sm-2 js-searchQuery-value" type="text" placeholder="Search" aria-label="Search">
-                <button class="btn js-searchQuery peach-gradient btn-rounded btn-sm my-0 waves-effect waves-light" type="submit"><i
+                <input class="form-control mr-sm-2 js-searchQuery-value" type="text" placeholder="Search"
+                       aria-label="Search">
+                <button class="btn js-searchQuery peach-gradient btn-rounded btn-sm my-0 waves-effect waves-light"
+                        type="submit"><i
                         class="fas fa-search text-grey" aria-hidden="true"></i> Search
                 </button>
             </form>
@@ -78,6 +80,16 @@
         crossorigin="anonymous"></script>
 <script src="https://kit.fontawesome.com/b58c61e063.js" crossorigin="anonymous"></script>
 
+<script>if ('serviceWorker' in navigator) {
+    navigator.serviceWorker.register("/src/js/sw.js").then((reg) => {
+        console.log("votre service worker a été enregistré!");
+    }).catch((error) => {
+        console.error(error);
+    });
+} else {
+    console.warn("Service workers are not supported.");
+}
+</script>
 <div class="pwa-spinner spinner-border text-warning"></div>
 </body>
 </html>
