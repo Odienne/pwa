@@ -20,9 +20,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="22aa267e-040c-4ba7-bfc4-056fc7634e9f" name="Default Changelist" comment="working on sw">
-      <change afterPath="$PROJECT_DIR$/sw.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sw.js" beforeDir="false" afterPath="$PROJECT_DIR$/sw.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,6 +55,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="javascript.nodejs.core.library.configured.version" value="12.12.0" />
+    <property name="javascript.nodejs.core.library.typings.version" value="12.12.0" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_package_manager_path" value="npm" />
@@ -74,13 +74,13 @@
       <recent name="C:\xampp\htdocs\pwa\src\images\icons" />
     </key>
   </component>
-  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="false" />
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="38581058-d109-42a4-ac42-f17fa0e2f149" name="Default Changelist" comment="" />
+      <changelist id="22aa267e-040c-4ba7-bfc4-056fc7634e9f" name="Default Changelist" comment="working on sw" />
       <created>1603972408137</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
@@ -88,6 +88,9 @@
       <workItem from="1603972409361" duration="62000" />
       <workItem from="1603972498295" duration="11761000" />
       <workItem from="1604562672371" duration="14031000" />
+      <workItem from="1605257120738" duration="6000" />
+      <workItem from="1605465120354" duration="67000" />
+      <workItem from="1605734780331" duration="646000" />
     </task>
     <task id="LOCAL-00001" summary="fix form for api call">
       <created>1604567760538</created>
@@ -285,11 +288,18 @@
       <option name="project" value="LOCAL" />
       <updated>1605190136112</updated>
     </task>
-    <option name="localTasksCounter" value="29" />
+    <task id="LOCAL-00029" summary="working on sw">
+      <created>1605190448357</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1605190448358</updated>
+    </task>
+    <option name="localTasksCounter" value="30" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="1" />
+    <option name="version" value="3" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
