@@ -19,7 +19,9 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="22aa267e-040c-4ba7-bfc4-056fc7634e9f" name="Default Changelist" comment="comment cache files" />
+    <list default="true" id="22aa267e-040c-4ba7-bfc4-056fc7634e9f" name="Default Changelist" comment="stockage">
+      <change beforePath="$PROJECT_DIR$/sw.js" beforeDir="false" afterPath="$PROJECT_DIR$/sw.js" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -91,28 +93,7 @@
       <workItem from="1605465120354" duration="67000" />
       <workItem from="1605734780331" duration="4986000" />
       <workItem from="1605770922879" duration="7249000" />
-      <workItem from="1605778750478" duration="10935000" />
-    </task>
-    <task id="LOCAL-00068" summary="online / offline">
-      <created>1605780346019</created>
-      <option name="number" value="00068" />
-      <option name="presentableId" value="LOCAL-00068" />
-      <option name="project" value="LOCAL" />
-      <updated>1605780346019</updated>
-    </task>
-    <task id="LOCAL-00069" summary="online / offline">
-      <created>1605780395700</created>
-      <option name="number" value="00069" />
-      <option name="presentableId" value="LOCAL-00069" />
-      <option name="project" value="LOCAL" />
-      <updated>1605780395700</updated>
-    </task>
-    <task id="LOCAL-00070" summary="online / offline">
-      <created>1605780446841</created>
-      <option name="number" value="00070" />
-      <option name="presentableId" value="LOCAL-00070" />
-      <option name="project" value="LOCAL" />
-      <updated>1605780446841</updated>
+      <workItem from="1605778750478" duration="11307000" />
     </task>
     <task id="LOCAL-00071" summary="online / offline">
       <created>1605780481596</created>
@@ -436,7 +417,28 @@
       <option name="project" value="LOCAL" />
       <updated>1605794965028</updated>
     </task>
-    <option name="localTasksCounter" value="117" />
+    <task id="LOCAL-00117" summary="stockage">
+      <created>1605795121536</created>
+      <option name="number" value="00117" />
+      <option name="presentableId" value="LOCAL-00117" />
+      <option name="project" value="LOCAL" />
+      <updated>1605795121536</updated>
+    </task>
+    <task id="LOCAL-00118" summary="stockage">
+      <created>1605795189474</created>
+      <option name="number" value="00118" />
+      <option name="presentableId" value="LOCAL-00118" />
+      <option name="project" value="LOCAL" />
+      <updated>1605795189474</updated>
+    </task>
+    <task id="LOCAL-00119" summary="stockage">
+      <created>1605795261329</created>
+      <option name="number" value="00119" />
+      <option name="presentableId" value="LOCAL-00119" />
+      <option name="project" value="LOCAL" />
+      <updated>1605795261329</updated>
+    </task>
+    <option name="localTasksCounter" value="120" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -474,7 +476,8 @@
     <MESSAGE value="sw" />
     <MESSAGE value="stockage bdd" />
     <MESSAGE value="comment cache files" />
-    <option name="LAST_COMMIT_MESSAGE" value="comment cache files" />
+    <MESSAGE value="stockage" />
+    <option name="LAST_COMMIT_MESSAGE" value="stockage" />
   </component>
   <component name="WindowStateProjectService">
     <state x="92" y="92" width="1736" height="856" key="DiffContextDialog" timestamp="1605778006225">

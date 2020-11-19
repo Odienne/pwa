@@ -148,7 +148,11 @@ self.addEventListener('fetch', function (event) {
                             };*/
 
                             //ajout
-                            let db = DBOpenRequest.result;
+                            DBOpenRequest.onsuccess = function(event) {
+                                let db =event.target.result;
+                                console.log(db)
+                            }
+                            // let db = DBOpenRequest.result;
                             let transaction = db.transaction(["images_search_results"], "readwrite");
 
                             // On indique le succès de la transaction
