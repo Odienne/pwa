@@ -15,7 +15,6 @@ self.addEventListener('install', event => {
                 "https://wonderful-heisenberg-ba06ea.netlify.app/src/js/KEYS.js:",
                 "https://wonderful-heisenberg-ba06ea.netlify.app/manifest.webmanifest",
                 "https://wonderful-heisenberg-ba06ea.netlify.app/src/images/icons/32x32.ico",
-                "https://wonderful-heisenberg-ba06ea.netlify.app/manifest.webmanifest",
             ]);
         })
     );
