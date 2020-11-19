@@ -20,8 +20,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="22aa267e-040c-4ba7-bfc4-056fc7634e9f" name="Default Changelist" comment="WIP sw">
+      <change afterPath="$PROJECT_DIR$/src/js/onlineHandler.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sw.js" beforeDir="false" afterPath="$PROJECT_DIR$/sw.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -91,21 +92,7 @@
       <workItem from="1605257120738" duration="6000" />
       <workItem from="1605465120354" duration="67000" />
       <workItem from="1605734780331" duration="4986000" />
-      <workItem from="1605770922879" duration="3824000" />
-    </task>
-    <task id="LOCAL-00001" summary="fix form for api call">
-      <created>1604567760538</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1604567760538</updated>
-    </task>
-    <task id="LOCAL-00002" summary="add icons manifest and fix responsive btn">
-      <created>1604574085777</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1604574085777</updated>
+      <workItem from="1605770922879" duration="4237000" />
     </task>
     <task id="LOCAL-00003" summary="update manifest">
       <created>1604577877019</created>
@@ -436,7 +423,21 @@
       <option name="project" value="LOCAL" />
       <updated>1605775259805</updated>
     </task>
-    <option name="localTasksCounter" value="50" />
+    <task id="LOCAL-00050" summary="WIP sw">
+      <created>1605775292843</created>
+      <option name="number" value="00050" />
+      <option name="presentableId" value="LOCAL-00050" />
+      <option name="project" value="LOCAL" />
+      <updated>1605775292843</updated>
+    </task>
+    <task id="LOCAL-00051" summary="WIP sw">
+      <created>1605775309421</created>
+      <option name="number" value="00051" />
+      <option name="presentableId" value="LOCAL-00051" />
+      <option name="project" value="LOCAL" />
+      <updated>1605775309421</updated>
+    </task>
+    <option name="localTasksCounter" value="52" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
