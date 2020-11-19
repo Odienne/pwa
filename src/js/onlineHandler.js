@@ -8,7 +8,7 @@ window.addEventListener('offline', event => {
     updateStatus()
 });
 
-function updateStatus(msg) {
+function updateStatus() {
     let status = document.getElementById("status");
     let condition = navigator.onLine ? "online" : "offline";
     status.setAttribute("class", condition);
