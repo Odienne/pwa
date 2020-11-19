@@ -59,7 +59,7 @@ self.addEventListener('fetch', function (event) {
         */
         if (!navigator.onLine) {
             // On ouvre la base de données
-            let DBOpenRequest = window.indexedDB.open("images_search_results", 4);
+            /*let DBOpenRequest = window.indexedDB.open("images_search_results", 4);
 
             // On ajoute les deux gestionnaires d'événements
             // qui agissent sur l'objet IDBDatabase object,
@@ -81,7 +81,7 @@ self.addEventListener('fetch', function (event) {
                 // avec les données contenues dans la base
                 console.log(db);
                 event.respondWith(() => new Response(JSON.stringify(db)));
-            };
+            };*/
         } else {
             event.respondWith(
                 fetch(event.request).then(res => {
@@ -115,7 +115,7 @@ self.addEventListener('fetch', function (event) {
 
                             localforage.setItem('images_search_results', formatted);
                             console.log('localforaging')
-                            let DBOpenRequest = self.indexedDB.open("images_search_results", 4);
+                            /*let DBOpenRequest = self.indexedDB.open("images_search_results", 4);
                             console.log(DBOpenRequest)
                             // Ce gestionnaire permet de parer au cas où une
                             // nouvelle version de la base de données doit
@@ -151,7 +151,7 @@ self.addEventListener('fetch', function (event) {
                             };*/
 
                             //ajout
-                            DBOpenRequest.onsuccess = function (event) {
+                            /*DBOpenRequest.onsuccess = function (event) {
                                 let db = event.target.result;
                                 console.log(db)
 
@@ -179,7 +179,7 @@ self.addEventListener('fetch', function (event) {
                                 };
                             }
 
-                        }
+                        }*/
 
 
                         return new Response(JSON.stringify(formatted));
