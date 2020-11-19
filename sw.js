@@ -37,19 +37,16 @@ self.addEventListener('activate', function (event) {
     );
 });*/
 
-self.addEventListener('fetch', function (e) {
-    e.respondWith(
-        caches.open('files')
-            .then(cache => cache.match(e.request))
-            .then(function (response) {
-                    return response || fetch(e.request);
-                }
-            ))
-});
-
 
 self.addEventListener('fetch', function (event) {
     console.log(event.request.url)
+
+    caches.open('files')
+        .then(cache => cache.match(e.request))
+        .then(function (response) {
+                return response || fetch(e.request);
+            }
+        )
 
     let search = "https://api.unsplash.com/search";
     if (event.request.url.includes(search)) {
