@@ -14,6 +14,12 @@ function searchImages() {
     const endQuery = `&query=${search}&per_page=9&orientation=squarish`;
     const UNSPLASH_API = 'https://api.unsplash.com/search/photos?client_id=' + KEYS.ACCESS_KEY + endQuery;
 
+    //récup donnée stockée en local if hors-ligne
+    if (navigator.onLine) {
+        console.log("fetch local data")
+        localforage.setItem('test', 'cc')
+    }
+
     axios.get(UNSPLASH_API)
         .then(response => {
             // Getting a data object from response that contains the necessary data from the server
