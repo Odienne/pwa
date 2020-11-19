@@ -47,6 +47,19 @@ self.addEventListener('fetch', function (event) {
                 console.log("réponse fetch", res)
                 return res.json().then((json) => {
                     console.log(json)
+                    const formatted = json.map(item => {
+                        return {
+                            alt_description: item.alt_description,
+                            color: item.color,
+                            description: item.description,
+                            likes: item.likes,
+                            tags: item.tags,
+                            links: item.links,
+                            urls: item.urls,
+                        }
+                    })
+                    console.log(formatted)
+                    return formatted;
                 });
             })
         )
