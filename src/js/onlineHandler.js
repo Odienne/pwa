@@ -15,3 +15,5 @@ function updateStatus() {
     status.innerHTML = condition;
 }
 
+updateStatus();
+
