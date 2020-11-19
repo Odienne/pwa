@@ -30,6 +30,12 @@ function searchImages() {
                 // Getting a data object from response that contains the necessary data from the server
                 const data = response.data;
                 //save search to storage
+                data.results.map(photo => {
+                    caches.open("images").then((cache) => {
+                        return cache.add(photo.urls.small);
+                    })
+                });
+
                 localforage.setItem(search, response.data)
                 console.log("save data");
 
@@ -47,10 +53,11 @@ function manageAndDisplayData(data, search) {
         title = '<p>Voici les résultats de la recherche <span class="font-weight-bold">"' + search + '"</span></p>';
 
         data.results.map(photo => {
+            let url = photo.urls.small;
             let date = new Date(photo.created_at);
             images += '    <div class="col-md-4">\n' +
                 '                <div class="card thumbnail mb-4 shadow-sm">\n' +
-                '                   <img class="img-fluid" src="' + photo.urls.small + '" alt="' + photo.description + '">\n' +
+                '                   <img class="img-fluid" src="' + url + '" alt="' + photo.description + '">\n' +
                 '                    <div class="card-body">\n' +
                 '                        <p class="card-text ellipsis">' + (photo.description ? photo.description : (photo.alt_description ? photo.alt_description : '')) + '\n' +
                 '                        </p>\n' +
