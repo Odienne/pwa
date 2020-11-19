@@ -64,7 +64,7 @@ self.addEventListener('fetch', function (event) {
                         }
                     })
                     console.log(formatted)
-                    return formatted;
+                    return new Response(JSON.stringify(formatted));
                 });
             })
         )
