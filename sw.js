@@ -45,7 +45,9 @@ self.addEventListener('fetch', function (event) {
         event.respondWith(
             fetch(event.request).then(res => {
                 console.log("réponse fetch", res)
-                return res;
+                return res.json().then((json) => {
+                    console.log(json)
+                });
             })
         )
     }
