@@ -19,7 +19,21 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="22aa267e-040c-4ba7-bfc4-056fc7634e9f" name="Default Changelist" comment="add ico and cache" />
+    <list default="true" id="22aa267e-040c-4ba7-bfc4-056fc7634e9f" name="Default Changelist" comment="sw">
+      <change afterPath="$PROJECT_DIR$/src/images/icons/128x128.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/icons/144x144.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/icons/16x16.ico" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/icons/16x16.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/icons/192x192.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/icons/24x24.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/icons/256x256.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/icons/32x32.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/icons/48x48.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/icons/96x96.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manifest.webmanifest" beforeDir="false" afterPath="$PROJECT_DIR$/manifest.webmanifest" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/images/icons/512x512.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/images/icons/512x512.png" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -60,16 +74,16 @@
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\PWA" />
+      <recent name="C:\xampp\htdocs\PWA\node_modules" />
+      <recent name="C:\xampp\htdocs\PWA\src" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\User\Documents\[Projets YNOV\2020\pwa\src\images\icons" />
       <recent name="C:\Users\User\Documents\[Projets YNOV\2020\pwa" />
       <recent name="C:\xampp\htdocs\pwa\src\json" />
       <recent name="C:\xampp\htdocs\pwa\src\images\icons" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\xampp\htdocs\PWA" />
-      <recent name="C:\xampp\htdocs\PWA\node_modules" />
-      <recent name="C:\xampp\htdocs\PWA\src" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -89,7 +103,8 @@
       <workItem from="1605257120738" duration="6000" />
       <workItem from="1605465120354" duration="67000" />
       <workItem from="1605734780331" duration="4986000" />
-      <workItem from="1605770922879" duration="6884000" />
+      <workItem from="1605770922879" duration="7249000" />
+      <workItem from="1605778750478" duration="644000" />
     </task>
     <task id="LOCAL-00014" summary="working on sw">
       <created>1605186810812</created>
@@ -473,10 +488,10 @@
     <state x="629" y="298" key="EditFileWatcherDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1605776614110" />
     <state x="461" y="165" key="SettingsEditor" timestamp="1605776614110" />
     <state x="461" y="165" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1605776614110" />
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1605776615208">
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1605778434337">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040/-1680.26.1680.1010@0.0.1920.1040" timestamp="1605776615208" />
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040/-1680.26.1680.1010@0.0.1920.1040" timestamp="1605778434337" />
     <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1605776614110" />
   </component>
 </project>
