@@ -1,13 +1,13 @@
 self.addEventListener('install', event => {
     console.log('install')
-    /*    event.waitUntil(
-            caches.open('v1').then(function(cache) {
-                return cache.addAll([
-                    "https://api.unsplash.com/photo",
-                    "https://images.unsplash.com/photo",
-                ]);
-            })
-        );*/
+    event.waitUntil(
+        caches.open('v1').then(function (cache) {
+            return cache.addAll([
+                "./index.html",
+                "./src/",
+            ]);
+        })
+    );
 });
 
 self.addEventListener('activate', function (event) {

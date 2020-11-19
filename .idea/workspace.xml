@@ -19,9 +19,10 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="22aa267e-040c-4ba7-bfc4-056fc7634e9f" name="Default Changelist" comment="online/offline handling">
+    <list default="true" id="22aa267e-040c-4ba7-bfc4-056fc7634e9f" name="Default Changelist" comment="add ico and cache">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manifest.webmanifest" beforeDir="false" afterPath="$PROJECT_DIR$/manifest.webmanifest" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sw.js" beforeDir="false" afterPath="$PROJECT_DIR$/sw.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,22 +57,23 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="javascript.nodejs.core.library.configured.version" value="12.12.0" />
     <property name="javascript.nodejs.core.library.typings.version" value="12.12.0" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/images/icons" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="watcher.settings" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\User\Documents\[Projets YNOV\2020\pwa\src\images\icons" />
+      <recent name="C:\Users\User\Documents\[Projets YNOV\2020\pwa" />
+      <recent name="C:\xampp\htdocs\pwa\src\json" />
+      <recent name="C:\xampp\htdocs\pwa\src\images\icons" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\xampp\htdocs\PWA" />
       <recent name="C:\xampp\htdocs\PWA\node_modules" />
       <recent name="C:\xampp\htdocs\PWA\src" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\User\Documents\[Projets YNOV\2020\pwa" />
-      <recent name="C:\xampp\htdocs\pwa\src\json" />
-      <recent name="C:\xampp\htdocs\pwa\src\images\icons" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -91,28 +93,7 @@
       <workItem from="1605257120738" duration="6000" />
       <workItem from="1605465120354" duration="67000" />
       <workItem from="1605734780331" duration="4986000" />
-      <workItem from="1605770922879" duration="5143000" />
-    </task>
-    <task id="LOCAL-00011" summary="working on sw">
-      <created>1605186274040</created>
-      <option name="number" value="00011" />
-      <option name="presentableId" value="LOCAL-00011" />
-      <option name="project" value="LOCAL" />
-      <updated>1605186274040</updated>
-    </task>
-    <task id="LOCAL-00012" summary="working on sw">
-      <created>1605186379815</created>
-      <option name="number" value="00012" />
-      <option name="presentableId" value="LOCAL-00012" />
-      <option name="project" value="LOCAL" />
-      <updated>1605186379815</updated>
-    </task>
-    <task id="LOCAL-00013" summary="working on sw">
-      <created>1605186709916</created>
-      <option name="number" value="00013" />
-      <option name="presentableId" value="LOCAL-00013" />
-      <option name="project" value="LOCAL" />
-      <updated>1605186709916</updated>
+      <workItem from="1605770922879" duration="5838000" />
     </task>
     <task id="LOCAL-00014" summary="working on sw">
       <created>1605186810812</created>
@@ -436,7 +417,28 @@
       <option name="project" value="LOCAL" />
       <updated>1605776503386</updated>
     </task>
-    <option name="localTasksCounter" value="60" />
+    <task id="LOCAL-00060" summary="online/offline handling">
+      <created>1605776622120</created>
+      <option name="number" value="00060" />
+      <option name="presentableId" value="LOCAL-00060" />
+      <option name="project" value="LOCAL" />
+      <updated>1605776622120</updated>
+    </task>
+    <task id="LOCAL-00061" summary="online/offline handling">
+      <created>1605776652576</created>
+      <option name="number" value="00061" />
+      <option name="presentableId" value="LOCAL-00061" />
+      <option name="project" value="LOCAL" />
+      <updated>1605776652576</updated>
+    </task>
+    <task id="LOCAL-00062" summary="add meta descr">
+      <created>1605776872044</created>
+      <option name="number" value="00062" />
+      <option name="presentableId" value="LOCAL-00062" />
+      <option name="project" value="LOCAL" />
+      <updated>1605776872044</updated>
+    </task>
+    <option name="localTasksCounter" value="63" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -462,7 +464,9 @@
     <MESSAGE value="edit index" />
     <MESSAGE value="WIP sw" />
     <MESSAGE value="online/offline handling" />
-    <option name="LAST_COMMIT_MESSAGE" value="online/offline handling" />
+    <MESSAGE value="add meta descr" />
+    <MESSAGE value="add ico and cache" />
+    <option name="LAST_COMMIT_MESSAGE" value="add ico and cache" />
   </component>
   <component name="WindowStateProjectService">
     <state x="629" y="298" key="EditFileWatcherDialog" timestamp="1605776614109" />
