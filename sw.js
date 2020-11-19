@@ -5,7 +5,8 @@ self.addEventListener('install', event => {
             return cache.addAll([
                 "/",
                 "/index.html",
-                "/src/",
+                "/src/js/main.js",
+                "/src/css/pwa.css",
             ]);
         })
     );
