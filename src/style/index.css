@@ -3,14 +3,16 @@ body {
   position: relative;
 }
 
-.pwa {
-  padding-bottom: 36px;
-}
-.pwa .online {
+.online {
   color: #087a0d;
 }
-.pwa .offline {
+
+.offline {
   color: #fc6262;
+}
+
+.pwa {
+  padding-bottom: 36px;
 }
 .pwa .pwa-search-form .btn {
   color: #fff;
