@@ -9,10 +9,8 @@ window.addEventListener('offline', event => {
 });
 
 function updateStatus() {
-    console.log("cc")
     let status = document.getElementById("status");
     let condition = navigator.onLine ? "online" : "offline";
-    console.log(condition)
     status.setAttribute("class", condition);
     status.innerHTML = condition;
 }
