@@ -9,10 +9,7 @@ self.addEventListener('install', event => {
                 "./src/js/main.js",
                 "./src/style/index.css",
                 "https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css",
-
-                "./src/js/KEYS.js:",
-                "./manifest.webmanifest",
-                "./src/images/icons/32x32.ico"
+                "https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js",
             ]);
         })
     );
