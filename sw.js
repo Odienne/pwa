@@ -37,18 +37,14 @@ self.addEventListener('activate', function (event) {
 self.addEventListener('fetch', function (event) {
     console.log(event.request.url)
 
-
     let search = "https://api.unsplash.com/search";
-    console.log(event.request.url.includes(search))
     if (event.request.url.includes(search)) {
-        console.log("fetch")
         event.respondWith(
             fetch(event.request).then(res => {
                 if (res.status !== 200) {
                     console.log("Error SW fetching");
                     return res;
                 }
-                console.log("réponse fetch", res)
                 return res.json().then((json) => {
                     console.log(json)
                     const formatted = {
@@ -69,7 +65,6 @@ self.addEventListener('fetch', function (event) {
                             user: item.user,
                         }
                     })
-                    console.log(formatted)
                     return new Response(JSON.stringify(formatted));
                 });
             })
