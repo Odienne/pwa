@@ -9,7 +9,7 @@
     "theme_color": "#456123",
     "background_color": "#456123",
 
-    "pngns":
+    "icons":
     [
         {
             "src": "src/images/icons/512x512.png",
