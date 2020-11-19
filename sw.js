@@ -10,9 +10,7 @@ self.addEventListener('install', event => {
                 "./src/style/index.css",
                 "https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css",
                 "https://unpkg.com/axios/dist/axios.min.js",
-                "https://code.jquery.com/jquery-3.5.1.slim.min.js",
-                "https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js",
-
+                "https://code.jquery.com/jquery-3.5.1.slim.min.js"
             ]);
         })
     );
