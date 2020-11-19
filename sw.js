@@ -108,8 +108,8 @@ self.addEventListener('fetch', function (event) {
                             }
                         })
                         //TODO save data to database
-                        if ('indexedDB' in window) {
-                            let DBOpenRequest = window.indexedDB.open("images_search_results", 4);
+                        if ('indexedDB' in self) {
+                            let DBOpenRequest = self.indexedDB.open("images_search_results", 4);
                             // Ce gestionnaire permet de parer au cas où une
                             // nouvelle version de la base de données doit
                             // être créée.
