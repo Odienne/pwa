@@ -12,8 +12,9 @@ self.addEventListener('install', event => {
                 "https://unpkg.com/axios/dist/axios.min.js",
                 "https://code.jquery.com/jquery-3.5.1.slim.min.js",
                 "https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js",
-                "https://kit.fontawesome.com/b58c61e063.js",
-                "./src/js/KEYS.js:"
+                "./src/js/KEYS.js:",
+                "./manifest.webmanifest",
+                "./src/images/icons/32x32.ico"
             ]);
         })
     );
