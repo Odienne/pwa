@@ -12,9 +12,9 @@ self.addEventListener('install', event => {
                 "https://code.jquery.com/jquery-3.5.1.slim.min.js",
                 "https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js",
                 "https://kit.fontawesome.com/b58c61e063.js",
-                "https://wonderful-heisenberg-ba06ea.netlify.app/src/js/KEYS.js:",
-                "https://wonderful-heisenberg-ba06ea.netlify.app/manifest.webmanifest",
-                "https://wonderful-heisenberg-ba06ea.netlify.app/src/images/icons/32x32.ico",
+                "./src/js/KEYS.js:",
+                "./manifest.webmanifest",
+                "./src/images/icons/32x32.ico",
             ]);
         })
     );
