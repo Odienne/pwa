@@ -39,10 +39,9 @@ self.addEventListener('fetch', function (event) {
 
 
     let search = "https://api.unsplash.com/photo";
+    console.log(event.request.url.includes(search))
     if (event.request.url.includes(search)) {
         console.log("fetch")
-        console.log(event)
-        console.log(event.request)
         event.respondWith(
             fetch(event.request).then(res => {
                 console.log("réponse fetch", res)
