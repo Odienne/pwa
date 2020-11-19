@@ -4,6 +4,8 @@ self.addEventListener('install', event => {
         caches.open('files').then(function (cache) {
             return cache.addAll([
                 "/",
+                "/index.html",
+                "/src/",
             ]);
         })
     );
