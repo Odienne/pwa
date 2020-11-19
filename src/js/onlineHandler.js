@@ -10,7 +10,7 @@ window.addEventListener('offline', event => {
 
 function updateStatus(msg) {
     let status = document.getElementById("status");
-    let condition = navigator.onLine ? "ONLINE" : "OFFLINE";
+    let condition = navigator.onLine ? "online" : "offline";
     status.setAttribute("class", condition);
     let state = document.getElementById("state");
     state.innerHTML = condition;
