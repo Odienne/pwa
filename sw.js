@@ -48,8 +48,8 @@ self.addEventListener('fetch', function (event) {
                 return res.json().then((json) => {
                     console.log(json)
                     const formatted = {
-                        total: item.total,
-                        total_pages: item.total_pages
+                        total: json.total,
+                        total_pages: json.total_pages
                     }
 
                     formatted.results = json.results.map(item => {
