@@ -42,7 +42,7 @@ self.addEventListener('fetch', function (event) {
     if (event.request.url.includes(search)) {
         event.respondWith(
             fetch(event.request).then(res => {
-                console.log(res)
+                console.log("réponse fetch", res)
                 return res;
             })
         )
