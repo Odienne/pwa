@@ -177,9 +177,9 @@ self.addEventListener('fetch', function (event) {
                                     // dans la base de données
                                     console.log("nouvel élément ajouté en bdd");
                                 };
-                            }
+                            }*/
 
-                        }*/
+                        }
 
 
                         return new Response(JSON.stringify(formatted));
