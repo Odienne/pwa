@@ -18,9 +18,11 @@ function searchImages() {
     console.log(navigator.onLine)
     if (!navigator.onLine) {
         console.log("fetch local data")
-        let localSearchResults = localforage.getItem(search);
-        console.log(localSearchResults);
-        manageAndDisplayData(localSearchResults, search);
+        localforage.getItem(search).then((data) => {
+            console.log(data);
+            manageAndDisplayData(data, search);
+        });
+
 
     } else {
         axios.get(UNSPLASH_API)
