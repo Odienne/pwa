@@ -19,7 +19,9 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="22aa267e-040c-4ba7-bfc4-056fc7634e9f" name="Default Changelist" comment="sw" />
+    <list default="true" id="22aa267e-040c-4ba7-bfc4-056fc7634e9f" name="Default Changelist" comment="sw">
+      <change beforePath="$PROJECT_DIR$/sw.js" beforeDir="false" afterPath="$PROJECT_DIR$/sw.js" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -91,42 +93,7 @@
       <workItem from="1605465120354" duration="67000" />
       <workItem from="1605734780331" duration="4986000" />
       <workItem from="1605770922879" duration="7249000" />
-      <workItem from="1605778750478" duration="5494000" />
-    </task>
-    <task id="LOCAL-00051" summary="WIP sw">
-      <created>1605775309421</created>
-      <option name="number" value="00051" />
-      <option name="presentableId" value="LOCAL-00051" />
-      <option name="project" value="LOCAL" />
-      <updated>1605775309421</updated>
-    </task>
-    <task id="LOCAL-00052" summary="online/offline handling">
-      <created>1605775725399</created>
-      <option name="number" value="00052" />
-      <option name="presentableId" value="LOCAL-00052" />
-      <option name="project" value="LOCAL" />
-      <updated>1605775725399</updated>
-    </task>
-    <task id="LOCAL-00053" summary="online/offline handling">
-      <created>1605776029415</created>
-      <option name="number" value="00053" />
-      <option name="presentableId" value="LOCAL-00053" />
-      <option name="project" value="LOCAL" />
-      <updated>1605776029415</updated>
-    </task>
-    <task id="LOCAL-00054" summary="online/offline handling">
-      <created>1605776076062</created>
-      <option name="number" value="00054" />
-      <option name="presentableId" value="LOCAL-00054" />
-      <option name="project" value="LOCAL" />
-      <updated>1605776076062</updated>
-    </task>
-    <task id="LOCAL-00055" summary="online/offline handling">
-      <created>1605776100651</created>
-      <option name="number" value="00055" />
-      <option name="presentableId" value="LOCAL-00055" />
-      <option name="project" value="LOCAL" />
-      <updated>1605776100651</updated>
+      <workItem from="1605778750478" duration="5796000" />
     </task>
     <task id="LOCAL-00056" summary="online/offline handling">
       <created>1605776322420</created>
@@ -436,7 +403,42 @@
       <option name="project" value="LOCAL" />
       <updated>1605786970339</updated>
     </task>
-    <option name="localTasksCounter" value="100" />
+    <task id="LOCAL-00100" summary="sw">
+      <created>1605787122693</created>
+      <option name="number" value="00100" />
+      <option name="presentableId" value="LOCAL-00100" />
+      <option name="project" value="LOCAL" />
+      <updated>1605787122693</updated>
+    </task>
+    <task id="LOCAL-00101" summary="sw">
+      <created>1605787163949</created>
+      <option name="number" value="00101" />
+      <option name="presentableId" value="LOCAL-00101" />
+      <option name="project" value="LOCAL" />
+      <updated>1605787163949</updated>
+    </task>
+    <task id="LOCAL-00102" summary="sw">
+      <created>1605787249516</created>
+      <option name="number" value="00102" />
+      <option name="presentableId" value="LOCAL-00102" />
+      <option name="project" value="LOCAL" />
+      <updated>1605787249516</updated>
+    </task>
+    <task id="LOCAL-00103" summary="sw">
+      <created>1605787294868</created>
+      <option name="number" value="00103" />
+      <option name="presentableId" value="LOCAL-00103" />
+      <option name="project" value="LOCAL" />
+      <updated>1605787294868</updated>
+    </task>
+    <task id="LOCAL-00104" summary="sw">
+      <created>1605787385323</created>
+      <option name="number" value="00104" />
+      <option name="presentableId" value="LOCAL-00104" />
+      <option name="project" value="LOCAL" />
+      <updated>1605787385323</updated>
+    </task>
+    <option name="localTasksCounter" value="105" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
