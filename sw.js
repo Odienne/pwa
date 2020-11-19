@@ -44,6 +44,10 @@ self.addEventListener('fetch', function (event) {
         console.log("fetch")
         event.respondWith(
             fetch(event.request).then(res => {
+                if (res.status !== 200) {
+                    console.log("Error SW fetching");
+                    return res;
+                }
                 console.log("réponse fetch", res)
                 return res.json().then((json) => {
                     console.log(json)

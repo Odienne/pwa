@@ -19,7 +19,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="22aa267e-040c-4ba7-bfc4-056fc7634e9f" name="Default Changelist" comment="working on sw">
+    <list default="true" id="22aa267e-040c-4ba7-bfc4-056fc7634e9f" name="Default Changelist" comment="edit index">
       <change beforePath="$PROJECT_DIR$/sw.js" beforeDir="false" afterPath="$PROJECT_DIR$/sw.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -90,7 +90,7 @@
       <workItem from="1605257120738" duration="6000" />
       <workItem from="1605465120354" duration="67000" />
       <workItem from="1605734780331" duration="4986000" />
-      <workItem from="1605770922879" duration="3456000" />
+      <workItem from="1605770922879" duration="3785000" />
     </task>
     <task id="LOCAL-00001" summary="fix form for api call">
       <created>1604567760538</created>
@@ -414,7 +414,21 @@
       <option name="project" value="LOCAL" />
       <updated>1605774814068</updated>
     </task>
-    <option name="localTasksCounter" value="47" />
+    <task id="LOCAL-00047" summary="working on sw">
+      <created>1605774920267</created>
+      <option name="number" value="00047" />
+      <option name="presentableId" value="LOCAL-00047" />
+      <option name="project" value="LOCAL" />
+      <updated>1605774920267</updated>
+    </task>
+    <task id="LOCAL-00048" summary="edit index">
+      <created>1605775102351</created>
+      <option name="number" value="00048" />
+      <option name="presentableId" value="LOCAL-00048" />
+      <option name="project" value="LOCAL" />
+      <updated>1605775102352</updated>
+    </task>
+    <option name="localTasksCounter" value="49" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -437,7 +451,8 @@
     <MESSAGE value="add icons manifest and fix responsive btn" />
     <MESSAGE value="update manifest" />
     <MESSAGE value="working on sw" />
-    <option name="LAST_COMMIT_MESSAGE" value="working on sw" />
+    <MESSAGE value="edit index" />
+    <option name="LAST_COMMIT_MESSAGE" value="edit index" />
   </component>
   <component name="WindowStateProjectService">
     <state x="629" y="298" key="EditFileWatcherDialog" />
