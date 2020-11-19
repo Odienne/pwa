@@ -112,6 +112,7 @@ self.addEventListener('fetch', function (event) {
                         if ('indexedDB' in self) {
                             console.log("it has indexDB")
 
+                            localForage.setItem('images_search_results', formatted);
                             let DBOpenRequest = self.indexedDB.open("images_search_results", 4);
                             console.log(DBOpenRequest)
                             // Ce gestionnaire permet de parer au cas où une
@@ -153,7 +154,7 @@ self.addEventListener('fetch', function (event) {
                                 console.log(db)
 
                                 // let db = DBOpenRequest.result;
-                                let transaction = db.transaction("images_search_results", "readwrite");
+                                let transaction = db.transaction(["images_search_results"], "readwrite");
 
                                 // On indique le succès de la transaction
                                 transaction.oncomplete = function (event) {
