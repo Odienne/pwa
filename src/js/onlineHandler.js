@@ -1,11 +1,11 @@
 window.addEventListener('online', event => {
     console.log("online")
-    updateStatus("online")
+    updateStatus()
 });
 
 window.addEventListener('offline', event => {
     console.log("offline")
-    updateStatus("offline")
+    updateStatus()
 });
 
 function updateStatus(msg) {
@@ -14,7 +14,5 @@ function updateStatus(msg) {
     status.setAttribute("class", condition);
     let state = document.getElementById("state");
     state.innerHTML = condition;
-    let log = document.getElementById("log");
-    log.appendChild(document.createTextNode("Évènement : " + msg + " ; état=" + condition + "\n"));
 }
 
