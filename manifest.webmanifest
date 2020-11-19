@@ -62,7 +62,7 @@
             "type": "image/png"
         },
         {
-            "src": "src/images/pngns/512x512.png",
+            "src": "src/images/icons/512x512.png",
             "sizes": "512x512",
             "type": "image/png"
         }
