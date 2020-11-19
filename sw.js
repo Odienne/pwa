@@ -148,32 +148,34 @@ self.addEventListener('fetch', function (event) {
                             };*/
 
                             //ajout
-                            DBOpenRequest.onsuccess = function(event) {
-                                let db =event.target.result;
+                            DBOpenRequest.onsuccess = function (event) {
+                                let db = event.target.result;
                                 console.log(db)
+
+                                // let db = DBOpenRequest.result;
+                                let transaction = db.transaction(["images_search_results"], "readwrite");
+
+                                // On indique le succès de la transaction
+                                transaction.oncomplete = function (event) {
+                                    console.log("transaction terminée");
+                                };
+                                transaction.onerror = function (event) {
+                                    console.log("Transaction non ouverte, erreur");
+                                };
+
+                                // On crée un magasin d'objet pour la transaction
+                                let objectStore = transaction.objectStore("images_search_results");
+
+                                // On ajoute l'objet newItem au magasin d'objets
+                                let objectStoreRequest = objectStore.add(formatted);
+
+                                objectStoreRequest.onsuccess = function (event) {
+                                    // On indique le succès de l'ajout de l'objet
+                                    // dans la base de données
+                                    console.log("nouvel élément ajouté en bdd");
+                                };
                             }
-                            // let db = DBOpenRequest.result;
-                            let transaction = db.transaction(["images_search_results"], "readwrite");
 
-                            // On indique le succès de la transaction
-                            transaction.oncomplete = function (event) {
-                                console.log("transaction terminée");
-                            };
-                            transaction.onerror = function (event) {
-                                console.log("Transaction non ouverte, erreur");
-                            };
-
-                            // On crée un magasin d'objet pour la transaction
-                            let objectStore = transaction.objectStore("images_search_results");
-
-                            // On ajoute l'objet newItem au magasin d'objets
-                            let objectStoreRequest = objectStore.add(formatted);
-
-                            objectStoreRequest.onsuccess = function (event) {
-                                // On indique le succès de l'ajout de l'objet
-                                // dans la base de données
-                                console.log("nouvel élément ajouté en bdd");
-                            };
                         }
 
 
