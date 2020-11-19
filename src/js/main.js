@@ -28,6 +28,7 @@ function searchImages() {
                 const data = response.data;
                 //save search to storage
                 localforage.setItem(search, response.data)
+                console.log("save data");
 
                 manageAndDisplayData(data, search);
 
