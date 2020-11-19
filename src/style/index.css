@@ -3,12 +3,17 @@ body {
   position: relative;
 }
 
-.online {
-  color: #087a0d;
+.status {
+  color: white;
+  padding: 10px;
+  border-radius: 17px;
+  margin: auto;
 }
-
-.offline {
-  color: #fc6262;
+.status .online {
+  background-color: #087a0d;
+}
+.status .offline {
+  background-color: #fc6262;
 }
 
 .pwa {

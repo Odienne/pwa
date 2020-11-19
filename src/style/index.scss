@@ -3,11 +3,20 @@ body {
   position: relative;
 }
 
-.online {
-  color: #087a0d
-}
-.offline {
-  color: #fc6262
+.status {
+  color: white;
+  padding: 10px;
+  border-radius: 17px;
+  margin: auto;
+
+  .online {
+    background-color: #087a0d
+  }
+
+  .offline {
+    background-color: #fc6262
+  }
+
 }
 
 .pwa {
