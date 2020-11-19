@@ -6,6 +6,13 @@ body {
 .pwa {
   padding-bottom: 36px;
 
+  .online {
+    color: #087a0d
+  }
+  .offline {
+    color: #fc6262
+  }
+
   .pwa-search-form {
 
     .btn {
