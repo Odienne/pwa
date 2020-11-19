@@ -20,6 +20,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="22aa267e-040c-4ba7-bfc4-056fc7634e9f" name="Default Changelist" comment="online/offline handling">
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/manifest.webmanifest" beforeDir="false" afterPath="$PROJECT_DIR$/manifest.webmanifest" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -90,35 +91,7 @@
       <workItem from="1605257120738" duration="6000" />
       <workItem from="1605465120354" duration="67000" />
       <workItem from="1605734780331" duration="4986000" />
-      <workItem from="1605770922879" duration="4837000" />
-    </task>
-    <task id="LOCAL-00007" summary="working on sw">
-      <created>1605185329908</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1605185329908</updated>
-    </task>
-    <task id="LOCAL-00008" summary="working on sw">
-      <created>1605185734491</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1605185734491</updated>
-    </task>
-    <task id="LOCAL-00009" summary="working on sw">
-      <created>1605185995354</created>
-      <option name="number" value="00009" />
-      <option name="presentableId" value="LOCAL-00009" />
-      <option name="project" value="LOCAL" />
-      <updated>1605185995354</updated>
-    </task>
-    <task id="LOCAL-00010" summary="working on sw">
-      <created>1605186045276</created>
-      <option name="number" value="00010" />
-      <option name="presentableId" value="LOCAL-00010" />
-      <option name="project" value="LOCAL" />
-      <updated>1605186045276</updated>
+      <workItem from="1605770922879" duration="5143000" />
     </task>
     <task id="LOCAL-00011" summary="working on sw">
       <created>1605186274040</created>
@@ -435,7 +408,35 @@
       <option name="project" value="LOCAL" />
       <updated>1605776100651</updated>
     </task>
-    <option name="localTasksCounter" value="56" />
+    <task id="LOCAL-00056" summary="online/offline handling">
+      <created>1605776322420</created>
+      <option name="number" value="00056" />
+      <option name="presentableId" value="LOCAL-00056" />
+      <option name="project" value="LOCAL" />
+      <updated>1605776322420</updated>
+    </task>
+    <task id="LOCAL-00057" summary="online/offline handling">
+      <created>1605776336788</created>
+      <option name="number" value="00057" />
+      <option name="presentableId" value="LOCAL-00057" />
+      <option name="project" value="LOCAL" />
+      <updated>1605776336788</updated>
+    </task>
+    <task id="LOCAL-00058" summary="online/offline handling">
+      <created>1605776400708</created>
+      <option name="number" value="00058" />
+      <option name="presentableId" value="LOCAL-00058" />
+      <option name="project" value="LOCAL" />
+      <updated>1605776400708</updated>
+    </task>
+    <task id="LOCAL-00059" summary="online/offline handling">
+      <created>1605776503386</created>
+      <option name="number" value="00059" />
+      <option name="presentableId" value="LOCAL-00059" />
+      <option name="project" value="LOCAL" />
+      <updated>1605776503386</updated>
+    </task>
+    <option name="localTasksCounter" value="60" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -464,11 +465,14 @@
     <option name="LAST_COMMIT_MESSAGE" value="online/offline handling" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="629" y="298" key="EditFileWatcherDialog" />
-    <state x="629" y="298" key="EditFileWatcherDialog/0.0.1920.1040@0.0.1920.1040" />
-    <state x="461" y="165" key="SettingsEditor" />
-    <state x="461" y="165" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" />
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" />
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" />
+    <state x="629" y="298" key="EditFileWatcherDialog" timestamp="1605776614109" />
+    <state x="629" y="298" key="EditFileWatcherDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1605776614110" />
+    <state x="461" y="165" key="SettingsEditor" timestamp="1605776614110" />
+    <state x="461" y="165" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1605776614110" />
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1605776615208">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040/-1680.26.1680.1010@0.0.1920.1040" timestamp="1605776615208" />
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1605776614110" />
   </component>
 </project>
