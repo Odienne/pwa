@@ -79,6 +79,15 @@ self.addEventListener('fetch', function (event) {
                 });
             })
         )
+    } else {
+        event.respondWith(
+            caches.open('files')
+                .then(cache => cache.match(event.request))
+                .then(function (response) {
+                        return response || fetch(event.request);
+                    }
+                )
+        )
     }
     /*
         console.log("fetch")
