@@ -35,9 +35,9 @@ self.addEventListener('activate', function (event) {
 });*/
 
 self.addEventListener('fetch', function (event) {
-    console.log("fetch")
-    console.log(event)
-    console.log(event.request)
+    //console.log("fetch")
+    //console.log(event)
+    //console.log(event.request)
     let search = "https://api.unsplash.com/photo";
     if (event.request.url.includes(search)) {
         event.respondWith(
