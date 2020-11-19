@@ -7,10 +7,7 @@ self.addEventListener('install', event => {
                 "./index.html",
                 "./src/js/onlineHandler.js",
                 "./src/js/main.js",
-                "./src/style/index.css",
-                "./src/js/KEYS.js:",
-                "./manifest.webmanifest",
-                "./src/images/icons/32x32.ico",
+                "./src/style/index.css"
             ]);
         })
     );
