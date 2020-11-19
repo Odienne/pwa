@@ -6,7 +6,8 @@ self.addEventListener('install', event => {
                 "./",
                 "./index.html",
                 "./src/js/main.js",
-                "./src/css/pwa.css",
+                "./src/style/index.css",
+                "https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css",
             ]);
         })
     );

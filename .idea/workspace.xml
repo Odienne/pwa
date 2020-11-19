@@ -19,20 +19,8 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="22aa267e-040c-4ba7-bfc4-056fc7634e9f" name="Default Changelist" comment="sw">
-      <change afterPath="$PROJECT_DIR$/src/images/icons/128x128.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/icons/144x144.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/icons/16x16.ico" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/icons/16x16.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/icons/192x192.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/icons/24x24.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/icons/256x256.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/icons/32x32.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/icons/48x48.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/icons/96x96.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manifest.webmanifest" beforeDir="false" afterPath="$PROJECT_DIR$/manifest.webmanifest" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/icons/512x512.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/images/icons/512x512.png" afterDir="false" />
+    <list default="true" id="22aa267e-040c-4ba7-bfc4-056fc7634e9f" name="Default Changelist" comment="add all icons">
+      <change beforePath="$PROJECT_DIR$/sw.js" beforeDir="false" afterPath="$PROJECT_DIR$/sw.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -75,6 +63,7 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\User\Documents\[Projets YNOV\2020\pwa\src\images\icons" />
       <recent name="C:\xampp\htdocs\PWA" />
       <recent name="C:\xampp\htdocs\PWA\node_modules" />
       <recent name="C:\xampp\htdocs\PWA\src" />
@@ -104,14 +93,7 @@
       <workItem from="1605465120354" duration="67000" />
       <workItem from="1605734780331" duration="4986000" />
       <workItem from="1605770922879" duration="7249000" />
-      <workItem from="1605778750478" duration="644000" />
-    </task>
-    <task id="LOCAL-00014" summary="working on sw">
-      <created>1605186810812</created>
-      <option name="number" value="00014" />
-      <option name="presentableId" value="LOCAL-00014" />
-      <option name="project" value="LOCAL" />
-      <updated>1605186810812</updated>
+      <workItem from="1605778750478" duration="838000" />
     </task>
     <task id="LOCAL-00015" summary="working on sw">
       <created>1605186876802</created>
@@ -449,7 +431,14 @@
       <option name="project" value="LOCAL" />
       <updated>1605776872044</updated>
     </task>
-    <option name="localTasksCounter" value="63" />
+    <task id="LOCAL-00063" summary="add all icons">
+      <created>1605779462654</created>
+      <option name="number" value="00063" />
+      <option name="presentableId" value="LOCAL-00063" />
+      <option name="project" value="LOCAL" />
+      <updated>1605779462654</updated>
+    </task>
+    <option name="localTasksCounter" value="64" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -477,7 +466,8 @@
     <MESSAGE value="online/offline handling" />
     <MESSAGE value="add meta descr" />
     <MESSAGE value="add ico and cache" />
-    <option name="LAST_COMMIT_MESSAGE" value="add ico and cache" />
+    <MESSAGE value="add all icons" />
+    <option name="LAST_COMMIT_MESSAGE" value="add all icons" />
   </component>
   <component name="WindowStateProjectService">
     <state x="92" y="92" width="1736" height="856" key="DiffContextDialog" timestamp="1605778006225">
