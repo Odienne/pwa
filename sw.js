@@ -113,6 +113,7 @@ self.addEventListener('fetch', function (event) {
                             console.log("it has indexDB")
 
                             let DBOpenRequest = self.indexedDB.open("images_search_results", 4);
+                            console.log(DBOpenRequest)
                             // Ce gestionnaire permet de parer au cas où une
                             // nouvelle version de la base de données doit
                             // être créée.
