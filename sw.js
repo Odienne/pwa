@@ -113,6 +113,7 @@ self.addEventListener('fetch', function (event) {
                             console.log("it has indexDB")
 
                             localforage.setItem('images_search_results', formatted);
+                            console.log('localforaging')
                             let DBOpenRequest = self.indexedDB.open("images_search_results", 4);
                             console.log(DBOpenRequest)
                             // Ce gestionnaire permet de parer au cas où une
