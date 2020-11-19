@@ -30,11 +30,6 @@ function searchImages() {
                 // Getting a data object from response that contains the necessary data from the server
                 const data = response.data;
                 //save search to storage
-                data.results.map(photo => {
-                    caches.open("images").then((cache) => {
-                        return cache.add(photo.urls.small);
-                    })
-                });
 
                 localforage.setItem(search, response.data)
                 console.log("save data");

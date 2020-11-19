@@ -65,6 +65,9 @@ self.addEventListener('fetch', function (event) {
                     }
 
                     formatted.results = json.results.map(item => {
+                        caches.open("images").then((cache) => {
+                            return cache.add(item.urls.small);
+                        })
                         return {
                             alt_description: item.alt_description,
                             color: item.color,
