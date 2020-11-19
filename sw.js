@@ -1,12 +1,12 @@
 self.addEventListener('install', event => {
     console.log('install')
     event.waitUntil(
-        caches.open('files').then(function (cache) {
+        caches.open('files2').then(function (cache) {
             return cache.addAll([
-                "/",
-                "/index.html",
-                "/src/js/main.js",
-                "/src/css/pwa.css",
+                "./",
+                "./index.html",
+                "./src/js/main.js",
+                "./src/css/pwa.css",
             ]);
         })
     );
