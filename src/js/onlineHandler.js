@@ -1,3 +1,4 @@
+console.log("hello")
 window.addEventListener('online', event => {
     console.log("online")
     updateStatus("online")
