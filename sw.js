@@ -16,7 +16,7 @@ self.addEventListener('activate', function (event) {
 });
 
 
-self.addEventListener('fetch', function(event) {
+/*self.addEventListener('fetch', function(event) {
     console.log("fetch")
     console.log(event)
     console.log(event.request)
@@ -32,17 +32,22 @@ self.addEventListener('fetch', function(event) {
             return caches.match('/route-cas-no-match-no-internet');
         })
     );
-});
+});*/
 
-/*self.addEventListener('fetch', function (event) {
+self.addEventListener('fetch', function (event) {
     console.log("fetch")
     console.log(event)
     console.log(event.request)
     let search = "https://api.unsplash.com/photo";
     if (event.request.url.includes(search)) {
-        event.respondWith()
+        event.respondWith(
+            fetch(event.request).then(res => {
+                console.log(res)
+                return res;
+            })
+        )
     }
-
+/*
     console.log("fetch")
     console.log(event)
     console.log(event.request)
@@ -70,8 +75,8 @@ self.addEventListener('fetch', function(event) {
                 });
             }
         }));
-    }
-});*/
+    }*/
+});
 
 
 self.addEventListener('message', function (event) {
