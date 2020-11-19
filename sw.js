@@ -3,7 +3,6 @@ self.addEventListener('install', event => {
     event.waitUntil(
         caches.open('files').then(function (cache) {
             return cache.addAll([
-                "./",
                 "./index.html",
                 "./src/js/onlineHandler.js",
                 "./src/js/main.js",

@@ -19,8 +19,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="22aa267e-040c-4ba7-bfc4-056fc7634e9f" name="Default Changelist" comment="online / offline">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="22aa267e-040c-4ba7-bfc4-056fc7634e9f" name="Default Changelist" comment="sw">
       <change beforePath="$PROJECT_DIR$/sw.js" beforeDir="false" afterPath="$PROJECT_DIR$/sw.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -94,28 +93,7 @@
       <workItem from="1605465120354" duration="67000" />
       <workItem from="1605734780331" duration="4986000" />
       <workItem from="1605770922879" duration="7249000" />
-      <workItem from="1605778750478" duration="4120000" />
-    </task>
-    <task id="LOCAL-00039" summary="working on sw">
-      <created>1605773811089</created>
-      <option name="number" value="00039" />
-      <option name="presentableId" value="LOCAL-00039" />
-      <option name="project" value="LOCAL" />
-      <updated>1605773811089</updated>
-    </task>
-    <task id="LOCAL-00040" summary="working on sw">
-      <created>1605773843443</created>
-      <option name="number" value="00040" />
-      <option name="presentableId" value="LOCAL-00040" />
-      <option name="project" value="LOCAL" />
-      <updated>1605773843443</updated>
-    </task>
-    <task id="LOCAL-00041" summary="working on sw">
-      <created>1605773961073</created>
-      <option name="number" value="00041" />
-      <option name="presentableId" value="LOCAL-00041" />
-      <option name="project" value="LOCAL" />
-      <updated>1605773961073</updated>
+      <workItem from="1605778750478" duration="4458000" />
     </task>
     <task id="LOCAL-00042" summary="working on sw">
       <created>1605774126579</created>
@@ -439,7 +417,28 @@
       <option name="project" value="LOCAL" />
       <updated>1605782334425</updated>
     </task>
-    <option name="localTasksCounter" value="88" />
+    <task id="LOCAL-00088" summary="sw">
+      <created>1605785743161</created>
+      <option name="number" value="00088" />
+      <option name="presentableId" value="LOCAL-00088" />
+      <option name="project" value="LOCAL" />
+      <updated>1605785743161</updated>
+    </task>
+    <task id="LOCAL-00089" summary="sw">
+      <created>1605785861945</created>
+      <option name="number" value="00089" />
+      <option name="presentableId" value="LOCAL-00089" />
+      <option name="project" value="LOCAL" />
+      <updated>1605785861945</updated>
+    </task>
+    <task id="LOCAL-00090" summary="sw">
+      <created>1605786001711</created>
+      <option name="number" value="00090" />
+      <option name="presentableId" value="LOCAL-00090" />
+      <option name="project" value="LOCAL" />
+      <updated>1605786001711</updated>
+    </task>
+    <option name="localTasksCounter" value="91" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -471,9 +470,9 @@
     <MESSAGE value="add all icon" />
     <MESSAGE value="manifest" />
     <MESSAGE value="btn" />
-    <MESSAGE value="sw" />
     <MESSAGE value="online / offline" />
-    <option name="LAST_COMMIT_MESSAGE" value="online / offline" />
+    <MESSAGE value="sw" />
+    <option name="LAST_COMMIT_MESSAGE" value="sw" />
   </component>
   <component name="WindowStateProjectService">
     <state x="92" y="92" width="1736" height="856" key="DiffContextDialog" timestamp="1605778006225">
