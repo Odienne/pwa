@@ -4,7 +4,7 @@
     "description": "Small PWA project",
     "scope": "/",
     "lang": "fr-FR",
-    "start_url": "/",
+    "start_url": "./index.html",
     "display": "minimal-ui",
     "theme_color": "#456123",
     "background_color": "#456123",
