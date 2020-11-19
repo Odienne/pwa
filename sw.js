@@ -38,7 +38,7 @@ self.addEventListener('fetch', function (event) {
     console.log(event.request.url)
 
 
-    let search = "https://api.unsplash.com/photo";
+    let search = "https://api.unsplash.com/search";
     console.log(event.request.url.includes(search))
     if (event.request.url.includes(search)) {
         console.log("fetch")
