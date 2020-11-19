@@ -15,6 +15,7 @@ function searchImages() {
     const UNSPLASH_API = 'https://api.unsplash.com/search/photos?client_id=' + KEYS.ACCESS_KEY + endQuery;
 
     //récup donnée stockée en local if hors-ligne
+    console.log(navigator.onLine)
     if (!navigator.onLine) {
         console.log("fetch local data")
         let localSearchResults = localforage.getItem(search);
