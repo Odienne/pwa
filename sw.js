@@ -1,10 +1,9 @@
 self.addEventListener('install', event => {
     console.log('install')
     event.waitUntil(
-        caches.open('v1').then(function (cache) {
+        caches.open('files').then(function (cache) {
             return cache.addAll([
-                "./index.html",
-                "./src/",
+                "/",
             ]);
         })
     );

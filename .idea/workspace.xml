@@ -19,11 +19,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="22aa267e-040c-4ba7-bfc4-056fc7634e9f" name="Default Changelist" comment="add ico and cache">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sw.js" beforeDir="false" afterPath="$PROJECT_DIR$/sw.js" afterDir="false" />
-    </list>
+    <list default="true" id="22aa267e-040c-4ba7-bfc4-056fc7634e9f" name="Default Changelist" comment="add ico and cache" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -93,7 +89,7 @@
       <workItem from="1605257120738" duration="6000" />
       <workItem from="1605465120354" duration="67000" />
       <workItem from="1605734780331" duration="4986000" />
-      <workItem from="1605770922879" duration="5838000" />
+      <workItem from="1605770922879" duration="6191000" />
     </task>
     <task id="LOCAL-00014" summary="working on sw">
       <created>1605186810812</created>
