@@ -9,61 +9,61 @@
     "theme_color": "#456123",
     "background_color": "#456123",
 
-    "icons":
+    "pngns":
     [
         {
-            "src": "src/images/icons/16x16.ico",
+            "src": "src/images/icons/512x512.png",
             "sizes": "16x16",
-            "type": "image/ico"
+            "type": "image/png"
         },
         {
-            "src": "src/images/icons/24x24.ico",
+            "src": "src/images/icons/512x512.png",
             "sizes": "24x24",
-            "type": "image/ico"
+            "type": "image/png"
         },
         {
-            "src": "src/images/icons/32x32.ico",
+            "src": "src/images/icons/512x512.png",
             "sizes": "32x32",
-            "type": "image/ico"
+            "type": "image/png"
         },
         {
-            "src": "src/images/icons/48x48.ico",
+            "src": "src/images/icons/512x512.png",
             "sizes": "48x48",
-            "type": "image/ico"
+            "type": "image/png"
         },
         {
-            "src": "src/images/icons/64x64.ico",
+            "src": "src/images/icons/512x512.png",
             "sizes": "64x64",
-            "type": "image/ico"
+            "type": "image/png"
         },
         {
-            "src": "src/images/icons/96x96.ico",
+            "src": "src/images/icons/512x512.png",
             "sizes": "96x96",
-            "type": "image/ico"
+            "type": "image/png"
         },
         {
-            "src": "src/images/icons/128x128.ico",
+            "src": "src/images/icons/512x512.png",
             "sizes": "128x128",
-            "type": "image/ico"
+            "type": "image/png"
         },
         {
-            "src": "src/images/icons/192x192.ico",
+            "src": "src/images/pngns/512x512.png",
             "sizes": "144x144 192x192",
-            "type": "image/ico"
+            "type": "image/png"
         },
          {
-            "src": "src/images/icons/192x192.ico",
+            "src": "src/images/pngns/512x512.png",
             "sizes": "144x144",
-            "type": "image/ico"
+            "type": "image/png"
         },
         {
-            "src": "src/images/icons/256x256.ico",
+            "src": "src/images/pngns/512x512.png",
             "sizes": "256x256",
-            "type": "image/ico"
+            "type": "image/png"
         },
         {
-            "src": "src/images/icons/5512x512.png",
-            "sizes": "5512x512",
+            "src": "src/images/pngns/512x512.png",
+            "sizes": "512x512",
             "type": "image/png"
         }
     ]
