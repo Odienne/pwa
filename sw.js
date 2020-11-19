@@ -56,11 +56,13 @@ self.addEventListener('fetch', function (event) {
                         return {
                             alt_description: item.alt_description,
                             color: item.color,
+                            created_at: item.created_at,
                             description: item.description,
                             likes: item.likes,
                             tags: item.tags,
                             links: item.links,
                             urls: item.urls,
+                            user: item.user,
                         }
                     })
                     console.log(formatted)
