@@ -1,7 +1,7 @@
 self.addEventListener('install', event => {
     console.log('install')
     event.waitUntil(
-        caches.open('files2').then(function (cache) {
+        caches.open('files').then(function (cache) {
             return cache.addAll([
                 "./",
                 "./index.html",
@@ -39,7 +39,7 @@ self.addEventListener('activate', function (event) {
 
 self.addEventListener('fetch', function (e) {
     e.respondWith(
-        caches.open('nom_du_cache')
+        caches.open('files')
             .then(cache => cache.match(e.request))
             .then(function (response) {
                     return response || fetch(e.request);
