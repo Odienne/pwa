@@ -41,13 +41,6 @@ self.addEventListener('activate', function (event) {
 self.addEventListener('fetch', function (event) {
     console.log(event.request.url)
 
-    caches.open('files')
-        .then(cache => cache.match(event.request))
-        .then(function (response) {
-                return response || fetch(event.request);
-            }
-        )
-
     let search = "https://api.unsplash.com/search";
     if (event.request.url.includes(search)) {
         event.respondWith(
