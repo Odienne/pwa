@@ -108,7 +108,10 @@ self.addEventListener('fetch', function (event) {
                             }
                         })
                         //TODO save data to database
+                        console.log("indexDB")
                         if ('indexedDB' in self) {
+                            console.log("it has indexDB")
+
                             let DBOpenRequest = self.indexedDB.open("images_search_results", 4);
                             // Ce gestionnaire permet de parer au cas où une
                             // nouvelle version de la base de données doit
