@@ -57,13 +57,11 @@ function manageAndDisplayData(data, search) {
                 // Get a list of entries. Each item is a Request object
                 cache.keys().then(function(key) {
                     console.log(key)
-                    if (photo.urls.small === key) {
+                    if (photo.urls.small === key.url) {
                         console.log(key)
                         // If the request URL matches, add the response to the result
-                        console.log(photo.urls.small === key)
-                        if (photo.urls.small === key) {
-                            result.push(cache.match(key));
-                        }
+                        console.log(photo.urls.small === key.url)
+                        result.push(cache.match(key));
                     }
                 });
                 console.log(result)
