@@ -64,7 +64,6 @@ self.addEventListener('fetch', function (event) {
                         total: json.total,
                         total_pages: json.total_pages
                     }
-                    console.log(json.results)
 
                     formatted.results = json.results.map(item => {
                         caches.open("images").then((cache) => {

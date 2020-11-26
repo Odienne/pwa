@@ -75,5 +75,7 @@ function manageAndDisplayData(data, search) {
 
 function addToFav() {
     console.log(this)
+    console.log(this.data('id'))
+    console.log(this.data('url'))
     console.log(event)
 }
