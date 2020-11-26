@@ -1,3 +1,5 @@
+console.log("ccccccc")
+
 self.addEventListener('install', event => {
     console.log('install')
     event.waitUntil(
