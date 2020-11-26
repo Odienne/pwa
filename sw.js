@@ -1,5 +1,3 @@
-console.log("ccccccc")
-
 self.addEventListener('install', event => {
     console.log('install')
     event.waitUntil(
@@ -59,7 +57,6 @@ self.addEventListener('fetch', function (event) {
             fetch(event.request).then(res => {
                 if (res.status !== 200) {
                     console.log("Error SW fetching");
-                    console.log(res)
                     return res;
                 }
                 return res.json().then((json) => {
@@ -89,7 +86,7 @@ self.addEventListener('fetch', function (event) {
             })
         )
     } else if (event.request.url.includes(search2)) {
-        console.log(event.request)
+        // console.log(event.request)
         event.respondWith(
             fetch(event.request).then(res => {
                 if (res.status !== 200) {
