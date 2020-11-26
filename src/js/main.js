@@ -48,17 +48,14 @@ function manageAndDisplayData(data, search) {
         title = '<p>Voici les résultats de la recherche <span class="font-weight-bold">"' + search + '"</span></p>';
 
         data.results.map(photo => {
-            console.log(photo.urls.small)
             let test = photo.urls.small.replace("https://images.unsplash.com", "")
-            console.log(test)
             caches.open("images").then((cache) => {
-                console.log(cache)
                 const result = [];
                 // Get a list of entries. Each item is a Request object
                 cache.keys().then(function(key) {
-                    console.log(key)
+                    console.log("keys",key)
+                    console.log("key url",key.url)
                     if (photo.urls.small === key.url) {
-                        console.log(key)
                         // If the request URL matches, add the response to the result
                         console.log(photo.urls.small === key.url)
                         result.push(cache.match(key));
