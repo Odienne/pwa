@@ -51,6 +51,9 @@ function manageAndDisplayData(data, search) {
             console.log(photo.urls.small)
             let test = photo.urls.small.replace("https://images.unsplash.com", "")
             console.log(test)
+            caches.open("images").then((cache) => {
+                console.log(cache)
+            })
             let url = photo.urls.small;
             if (!navigator.onLine) url = test;
             let date = new Date(photo.created_at);
