@@ -53,6 +53,16 @@ function manageAndDisplayData(data, search) {
             console.log(test)
             caches.open("images").then((cache) => {
                 console.log(cache)
+                const result = [];
+                // Get a list of entries. Each item is a Request object
+                for (const request of cache.keys()) {
+                    // If the request URL matches, add the response to the result
+                    console.log(photo.urls.small === request)
+                    if (photo.urls.small === request) {
+                        result.push(cache.match(request));
+                    }
+                }
+                console.log(result)
             })
             let url = photo.urls.small;
             if (!navigator.onLine) url = test;
