@@ -4,6 +4,7 @@ $(document).ready(() => {
     let submit = $('.js-searchQuery');
     $('.js-searchQuery-value').keypress((event) => event.which === 13 ? submit.click() : null)
     submit.on('click', searchImages)
+    $(".jsAddToFav").on('click', addToFav)
 })
 
 
@@ -48,27 +49,7 @@ function manageAndDisplayData(data, search) {
         title = '<p>Voici les résultats de la recherche <span class="font-weight-bold">"' + search + '"</span></p>';
 
         data.results.map(photo => {
-            let test = photo.urls.small.replace("https://images.unsplash.com", "")
-            caches.open("images").then((cache) => {
-                const result = [];
-                // Get a list of entries. Each item is a Request object
-                cache.keys().then(function(keys) {
-                    console.log(keys)
-                    keys.forEach(function(request, index, array) {
-                        console.log("key",request)
-                        console.log("key url",request.url)
-                        if (photo.urls.small === request.url) {
-                            // If the request URL matches, add the response to the result
-                            console.log(photo.urls.small === request.url)
-                            result.push(cache.match(request));
-                        }
-                    });
-
-                });
-                console.log("result", result)
-            })
             let url = photo.urls.small;
-            if (!navigator.onLine) url = test;
             let date = new Date(photo.created_at);
             images += '    <div class="col-md-4">\n' +
                 '                <div class="card thumbnail mb-4 shadow-sm">\n' +
@@ -78,6 +59,7 @@ function manageAndDisplayData(data, search) {
                 '                        </p>\n' +
                 '                        <div class="d-flex justify-content-between align-items-center">\n' +
                 '                            <small class="text-muted">' + date.getDate() + '/' + date.getMonth() + '/' + date.getFullYear() + '</small>\n' +
+                '                            <i class="fas fa-heart" class="jsAddToFav"></i>' +
                 '                        </div>\n' +
                 '                    </div>\n' +
                 '                </div>\n' +
@@ -90,3 +72,7 @@ function manageAndDisplayData(data, search) {
     $('.pwa-spinner').hide();
 }
 
+function addToFav() {
+    console.log(this)
+    console.log(event)
+}
