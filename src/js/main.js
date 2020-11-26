@@ -75,7 +75,7 @@ function manageAndDisplayData(data, search) {
 
 function addToFav() {
     console.log(this)
-    console.log(this.dataset('id'))
-    console.log(this.dataset('url'))
+    console.log(this.dataset.id)
+    console.log(this.dataset.url)
     console.log(event)
 }
