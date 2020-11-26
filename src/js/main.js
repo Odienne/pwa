@@ -48,7 +48,7 @@ function manageAndDisplayData(data, search) {
         title = '<p>Voici les résultats de la recherche <span class="font-weight-bold">"' + search + '"</span></p>';
 
         data.results.map(photo => {
-            console.log(photo)
+            console.log(photo.urls.small)
             let url = photo.urls.small;
             let date = new Date(photo.created_at);
             images += '    <div class="col-md-4">\n' +
