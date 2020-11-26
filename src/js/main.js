@@ -58,7 +58,7 @@ function manageAndDisplayData(data, search) {
                 '                        </p>\n' +
                 '                        <div class="d-flex justify-content-between align-items-center">\n' +
                 '                            <small class="text-muted">' + date.getDate() + '/' + date.getMonth() + '/' + date.getFullYear() + '</small>\n' +
-                '                            <i class="fas fa-heart" class="jsAddToFav"></i>' +
+                '                            <i class="fas fa-heart cursor-pointer jsAddToFav"></i>' +
                 '                        </div>\n' +
                 '                    </div>\n' +
                 '                </div>\n' +
