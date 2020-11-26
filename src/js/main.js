@@ -56,6 +56,7 @@ function manageAndDisplayData(data, search) {
                 const result = [];
                 // Get a list of entries. Each item is a Request object
                 for (const request of cache.keys()) {
+                    console.log(request)
                     // If the request URL matches, add the response to the result
                     console.log(photo.urls.small === request)
                     if (photo.urls.small === request) {
