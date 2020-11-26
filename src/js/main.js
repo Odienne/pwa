@@ -4,7 +4,6 @@ $(document).ready(() => {
     let submit = $('.js-searchQuery');
     $('.js-searchQuery-value').keypress((event) => event.which === 13 ? submit.click() : null)
     submit.on('click', searchImages)
-    $(".jsAddToFav").on('click', addToFav)
 })
 
 
@@ -70,6 +69,8 @@ function manageAndDisplayData(data, search) {
     $("#js-pwa-photos").html(images)
     $("#js-searchTitle").html(title)
     $('.pwa-spinner').hide();
+    $(".jsAddToFav").on('click', addToFav)
+
 }
 
 function addToFav() {
