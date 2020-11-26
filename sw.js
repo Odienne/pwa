@@ -51,7 +51,41 @@ self.addEventListener('fetch', function (event) {
     console.log(event.request.url)
 
     let search = "https://api.unsplash.com/search";
+    let search2 = "https://images.unsplash.com/photo";
     if (event.request.url.includes(search)) {
+        event.respondWith(
+            fetch(event.request).then(res => {
+                if (res.status !== 200) {
+                    console.log("Error SW fetching");
+                    return res;
+                }
+                return res.json().then((json) => {
+                    const formatted = {
+                        total: json.total,
+                        total_pages: json.total_pages
+                    }
+
+                    formatted.results = json.results.map(item => {
+                        caches.open("images").then((cache) => {
+                            return cache.add(item.urls.small);
+                        })
+                        return {
+                            alt_description: item.alt_description,
+                            color: item.color,
+                            created_at: item.created_at,
+                            description: item.description,
+                            likes: item.likes,
+                            tags: item.tags,
+                            links: item.links,
+                            urls: item.urls,
+                            user: item.user,
+                        }
+                    })
+                    return new Response(JSON.stringify(formatted));
+                });
+            })
+        )
+    } else if (event.request.url.includes(search2)) {
         event.respondWith(
             fetch(event.request).then(res => {
                 if (res.status !== 200) {
@@ -89,6 +123,7 @@ self.addEventListener('fetch', function (event) {
             caches.open('files')
                 .then(cache => cache.match(event.request))
                 .then(function (response) {
+                    console.log(response)
                         return response || fetch(event.request);
                     }
                 )
