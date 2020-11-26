@@ -65,7 +65,7 @@ function manageAndDisplayData(data, search) {
                     });
 
                 });
-                console.log(result)
+                console.log("result", result)
             })
             let url = photo.urls.small;
             if (!navigator.onLine) url = test;
