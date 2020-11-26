@@ -86,6 +86,7 @@ self.addEventListener('fetch', function (event) {
             })
         )
     } else if (event.request.url.includes(search2)) {
+        console.log(event.request)
         event.respondWith(
             fetch(event.request).then(res => {
                 if (res.status !== 200) {
