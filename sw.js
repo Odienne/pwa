@@ -64,12 +64,14 @@ self.addEventListener('fetch', function (event) {
                         total: json.total,
                         total_pages: json.total_pages
                     }
+                    console.log(json.results)
 
                     formatted.results = json.results.map(item => {
                         caches.open("images").then((cache) => {
                             return cache.add(item.urls.small);
                         })
                         return {
+                            id: item.id,
                             alt_description: item.alt_description,
                             color: item.color,
                             created_at: item.created_at,
