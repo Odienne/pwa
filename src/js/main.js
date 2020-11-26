@@ -52,14 +52,17 @@ function manageAndDisplayData(data, search) {
             caches.open("images").then((cache) => {
                 const result = [];
                 // Get a list of entries. Each item is a Request object
-                cache.keys().then(function(key) {
-                    console.log("keys",key)
-                    console.log("key url",key.url)
-                    if (photo.urls.small === key.url) {
-                        // If the request URL matches, add the response to the result
-                        console.log(photo.urls.small === key.url)
-                        result.push(cache.match(key));
-                    }
+                cache.keys().then(function(keys) {
+                    keys.forEach(function(request, index, array) {
+                        cache.delete(request);
+                        console.log("key url",request.url)
+                        if (photo.urls.small === request.url) {
+                            // If the request URL matches, add the response to the result
+                            console.log(photo.urls.small === request.url)
+                            result.push(cache.match(request));
+                        }
+                    });
+
                 });
                 console.log(result)
             })
