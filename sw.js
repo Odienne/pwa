@@ -100,6 +100,8 @@ self.addEventListener('fetch', function (event) {
 
                     formatted.results = json.results.map(item => {
                         caches.open("images").then((cache) => {
+                            console.log(item)
+                            console.log(cache)
                             return cache.add(item.urls.small);
                         })
                         return {
