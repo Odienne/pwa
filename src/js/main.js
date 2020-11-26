@@ -49,7 +49,7 @@ function manageAndDisplayData(data, search) {
 
         data.results.map(photo => {
             console.log(photo.urls.small)
-            let test = photo.urls.small.replace("https://images.unsplash.com/", "")
+            let test = photo.urls.small.replace("https://images.unsplash.com", "")
             console.log(test)
             let url = photo.urls.small;
             if (!navigator.onLine) url = test;
