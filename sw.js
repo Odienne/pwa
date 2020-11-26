@@ -7,6 +7,7 @@ self.addEventListener('install', event => {
                 "./index.html",
                 "./src/js/onlineHandler.js",
                 "./src/js/main.js",
+                "./sw.js",
                 "./src/style/index.css",
                 "https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css",
                 "https://cdnjs.cloudflare.com/ajax/libs/localforage/1.7.3/localforage.min.js",
