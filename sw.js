@@ -172,5 +172,20 @@ self.addEventListener('message', function (event) {
 
 self.addEventListener('sync', function(event) {
     console.log("test")
+    let favs = document.querySelectorAll('.fav')
+    console.log(favs)
+
+    fetch("http://localhost:3000/favoris/multiples", {
+        method: 'POST',
+        headers: {
+            'Accept': 'application/json',
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({favs}),
+    }).then(res => {
+        return res.json();
+    }).then(data => {
+        favs = data;
+    })
     self.registration.showNotification("Sync event fired!");
 });

@@ -3,7 +3,6 @@ window.addEventListener('online', event => {
     updateStatus()
 
     navigator.serviceWorker.ready.then(function(swRegistration) {
-        console.log("YO")
         return swRegistration.sync.register('syncTest');
     });
 });
