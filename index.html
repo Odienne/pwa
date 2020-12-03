@@ -121,8 +121,8 @@ rage/1.7.3/localforage.min.js"></script>
         }).then(function(tags) {
             if (tags.includes('syncTest')) log("There's already a background sync pending");
         }).catch(function(err) {
-            log('It broke (probably sync not supported or flag not enabled)');
-            log(err.message);
+            console.log('It broke (probably sync not supported or flag not enabled)');
+            console.log(err.message);
         });
 
         new Promise(function(resolve, reject) {
@@ -135,10 +135,10 @@ rage/1.7.3/localforage.min.js"></script>
         }).then(function(reg) {
             return reg.sync.register('syncTest');
         }).then(function() {
-            log('Sync registered');
+            console.log('Sync registered');
         }).catch(function(err) {
-            log('It broke');
-            log(err.message);
+            console.log('It broke');
+            console.log(err.message);
         });
        /* navigator.serviceWorker.register("/sw.js").then((reg) => {
             console.log("votre service worker a été enregistré!");
