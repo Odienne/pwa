@@ -1,9 +1,12 @@
 import KEYS from './KEYS.js'
 
+let favs = [];
 $(document).ready(() => {
     let submit = $('.js-searchQuery');
     $('.js-searchQuery-value').keypress((event) => event.which === 13 ? submit.click() : null)
     submit.on('click', searchImages)
+
+    favs = getFavs();
 })
 
 
@@ -58,7 +61,7 @@ function manageAndDisplayData(data, search) {
                 '                        </p>\n' +
                 '                        <div class="d-flex justify-content-between align-items-center">\n' +
                 '                            <small class="text-muted">' + date.getDate() + '/' + date.getMonth() + '/' + date.getFullYear() + '</small>\n' +
-                '                            <i class="fas fa-heart cursor-pointer jsAddToFav" data-url="'+url+'" data-id="'+ photo.id +'"></i>' +
+                '                            <i class="fas fa-heart cursor-pointer ' + (inFav(photo.id) ? "fav" : "not-fav") + ' jsAddToFav" data-search="' + search + '" data-id="' + photo.id + '"></i>' +
                 '                        </div>\n' +
                 '                    </div>\n' +
                 '                </div>\n' +
@@ -75,7 +78,58 @@ function manageAndDisplayData(data, search) {
 
 function addToFav() {
     console.log(this)
-    console.log(this.dataset.id)
-    console.log(this.dataset.url)
-    console.log(event)
+    let photoId = this.dataset.id;
+    let searchValue = this.dataset.search;
+
+    let added = !$(this).hasClass('fav')
+    $(this).toggleClass('not-fav')
+    $(this).toggleClass('fav')
+
+    fetch("http://localhost:3000/favoris", {
+        method: 'POST',
+        headers: {
+            'Accept': 'application/json',
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({photoId}),
+    }).then(res => {
+        return res.json();
+    }).then(data => {
+        favs = data;
+        let message = added ? "Favori ajouté" : "Favori enlevé";
+        sendNotif(message)
+    })
+}
+
+function inFav(id) {
+    return favs.includes(id);
+}
+
+function getFavs() {
+    fetch("http://localhost:3000/favoris", {
+        method: 'GET'
+    }).then(res => {
+        return res.json();
+    }).then(data => {
+        favs = data;
+        return favs;
+    })
+}
+
+function sendNotif(message) {
+    if ('Notification' in window) {
+        if (Notification.permission === "granted") {
+            const notification =
+                new Notification(message)
+        } else if (Notification.permission !== "denied") {
+            Notification.requestPermission(permission => {
+                if (permission === "granted") {
+                    const notification =
+                        new Notification(message)
+                    ;
+                }
+            });
+        }
+    }
+
 }

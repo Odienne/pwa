@@ -127,7 +127,7 @@ self.addEventListener('fetch', function (event) {
             caches.open('files')
                 .then(cache => cache.match(event.request))
                 .then(function (response) {
-                    console.log(response)
+                        console.log(response)
                         return response || fetch(event.request);
                     }
                 )
@@ -168,4 +168,13 @@ self.addEventListener('fetch', function (event) {
 self.addEventListener('message', function (event) {
     console.log("message")
     console.log(event)
+});
+
+self.addEventListener('sync', function(event) {
+    if (event.tag == 'myFirstSync') {
+        console.log("COUCOU")
+        console.log("COUCOU")
+        console.log("COUCOU")
+        event.waitUntil(doSomeStuff());
+    }
 });

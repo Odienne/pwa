@@ -17,3 +17,15 @@ function updateStatus() {
 
 updateStatus();
 
+
+// console.log("cc")
+// if ("sync" in reg) {
+//     const status = await navigator.permissions.query(
+//         {
+//             name: "background-sync"
+//         });
+//     if (status == "granted") {
+//
+//     }
+//}
+// Utilisation de l’API Background Sync}

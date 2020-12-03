@@ -18,18 +18,6 @@ body {
   background-color: #fc6262;
 }
 
-.cursor-pointer {
-  cursor: pointer;
-}
-
-.not-fav {
-  color: grey;
-}
-
-.fav {
-  color: #fc6262;
-}
-
 .pwa {
   padding-bottom: 36px;
 }

@@ -1,0 +1,1 @@
+function updateStatus(){let t=document.getElementById("status"),e=navigator.onLine?"online":"offline";t.setAttribute("class",e),t.innerHTML=e}window.addEventListener("online",(t=>{console.log("online"),updateStatus()})),window.addEventListener("offline",(t=>{console.log("offline"),updateStatus()})),updateStatus();

@@ -19,8 +19,14 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="22aa267e-040c-4ba7-bfc4-056fc7634e9f" name="Default Changelist" comment="add fav">
+    <list default="true" id="22aa267e-040c-4ba7-bfc4-056fc7634e9f" name="Default Changelist" comment="a lot of changes">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/js/onlineHandler.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/onlineHandler.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/style/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/style/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/style/index.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/src/style/index.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/style/index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/style/index.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sw.js" beforeDir="false" afterPath="$PROJECT_DIR$/sw.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -95,7 +101,22 @@
       <workItem from="1605734780331" duration="4986000" />
       <workItem from="1605770922879" duration="7249000" />
       <workItem from="1605778750478" duration="17661000" />
-      <workItem from="1606376641816" duration="15017000" />
+      <workItem from="1606376641816" duration="14003000" />
+      <workItem from="1606981630390" duration="12380000" />
+    </task>
+    <task id="LOCAL-00111" summary="sw">
+      <created>1605788177267</created>
+      <option name="number" value="00111" />
+      <option name="presentableId" value="LOCAL-00111" />
+      <option name="project" value="LOCAL" />
+      <updated>1605788177267</updated>
+    </task>
+    <task id="LOCAL-00112" summary="sw">
+      <created>1605788209539</created>
+      <option name="number" value="00112" />
+      <option name="presentableId" value="LOCAL-00112" />
+      <option name="project" value="LOCAL" />
+      <updated>1605788209539</updated>
     </task>
     <task id="LOCAL-00113" summary="sw">
       <created>1605788561110</created>
@@ -412,35 +433,21 @@
       <option name="project" value="LOCAL" />
       <updated>1606398806773</updated>
     </task>
-    <task id="LOCAL-00158" summary="webpack">
-      <created>1606403175489</created>
+    <task id="LOCAL-00158" summary="a lot of changes + sync and favs&#10;gi">
+      <created>1606998527817</created>
       <option name="number" value="00158" />
       <option name="presentableId" value="LOCAL-00158" />
       <option name="project" value="LOCAL" />
-      <updated>1606403175489</updated>
+      <updated>1606998527817</updated>
     </task>
-    <task id="LOCAL-00159" summary="add fav">
-      <created>1606403266534</created>
+    <task id="LOCAL-00159" summary="a lot of changes">
+      <created>1606998745748</created>
       <option name="number" value="00159" />
       <option name="presentableId" value="LOCAL-00159" />
       <option name="project" value="LOCAL" />
-      <updated>1606403266534</updated>
+      <updated>1606998745748</updated>
     </task>
-    <task id="LOCAL-00160" summary="add fav">
-      <created>1606403383000</created>
-      <option name="number" value="00160" />
-      <option name="presentableId" value="LOCAL-00160" />
-      <option name="project" value="LOCAL" />
-      <updated>1606403383000</updated>
-    </task>
-    <task id="LOCAL-00161" summary="add fav">
-      <created>1606403706593</created>
-      <option name="number" value="00161" />
-      <option name="presentableId" value="LOCAL-00161" />
-      <option name="project" value="LOCAL" />
-      <updated>1606403706593</updated>
-    </task>
-    <option name="localTasksCounter" value="162" />
+    <option name="localTasksCounter" value="160" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -479,19 +486,19 @@
     <MESSAGE value="stockage bdd" />
     <MESSAGE value="comment cache files" />
     <MESSAGE value="stockage" />
-    <MESSAGE value="webpack" />
-    <MESSAGE value="add fav" />
-    <option name="LAST_COMMIT_MESSAGE" value="add fav" />
+    <MESSAGE value="a lot of changes + sync and favs" />
+    <MESSAGE value="a lot of changes" />
+    <option name="LAST_COMMIT_MESSAGE" value="a lot of changes" />
   </component>
   <component name="WindowStateProjectService">
     <state x="739" y="241" key="#HTTP_Proxy" timestamp="1606397032811">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="739" y="241" key="#HTTP_Proxy/0.0.1920.1040/-1680.26.1680.1010@0.0.1920.1040" timestamp="1606397032811" />
-    <state x="92" y="92" width="1736" height="856" key="DiffContextDialog" timestamp="1605778006225">
+    <state x="92" y="92" width="1736" height="856" key="DiffContextDialog" timestamp="1606982837108">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="92" y="92" width="1736" height="856" key="DiffContextDialog/0.0.1920.1040/-1680.26.1680.1010@0.0.1920.1040" timestamp="1605778006225" />
+    <state x="92" y="92" width="1736" height="856" key="DiffContextDialog/0.0.1920.1040/-1680.26.1680.1010@0.0.1920.1040" timestamp="1606982837108" />
     <state x="629" y="298" key="EditFileWatcherDialog" timestamp="1605776614109" />
     <state x="629" y="298" key="EditFileWatcherDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1605776614110" />
     <state x="461" y="165" key="SettingsEditor" timestamp="1605776614110" />
@@ -500,6 +507,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="667" y="76" width="585" height="888" key="find.popup/0.0.1920.1040/-1680.26.1680.1010@0.0.1920.1040" timestamp="1605786713601" />
+    <state x="616" y="240" key="run.anything.popup" timestamp="1606996076940">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="616" y="240" key="run.anything.popup/0.0.1920.1040/-1680.26.1680.1010@0.0.1920.1040" timestamp="1606996076940" />
     <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1605778434337">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
