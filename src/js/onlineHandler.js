@@ -2,20 +2,9 @@ window.addEventListener('online', event => {
     console.log("online")
     updateStatus()
 
-    new Promise(function(resolve, reject) {
-        Notification.requestPermission(function(result) {
-            if (result !== 'granted') return reject(Error("Denied notification permission"));
-            resolve();
-        })
-    }).then(function() {
-        return navigator.serviceWorker.ready;
-    }).then(function(reg) {
-        return reg.sync.register('syncTest');
-    }).then(function() {
-        console.log('Sync registered');
-    }).catch(function(err) {
-        console.log('It broke');
-        console.log(err.message);
+    navigator.serviceWorker.ready.then(function(swRegistration) {
+        console.log("YO")
+        return swRegistration.sync.register('syncTest');
     });
 });
 

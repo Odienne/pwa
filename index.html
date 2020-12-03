@@ -119,7 +119,7 @@ rage/1.7.3/localforage.min.js"></script>
         navigator.serviceWorker.register('sw.js').then(function(reg) {
             return reg.sync.getTags();
         }).then(function(tags) {
-            if (tags.includes('syncTest')) log("There's already a background sync pending");
+            if (tags.includes('syncTest')) console.log("There's already a background sync pending");
         }).catch(function(err) {
             console.log('It broke (probably sync not supported or flag not enabled)');
             console.log(err.message);
