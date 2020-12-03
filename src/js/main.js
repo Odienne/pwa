@@ -9,7 +9,7 @@ $(document).ready(() => {
     favs = getFavs();
 
     navigator.serviceWorker.addEventListener('message', event => {
-        console.log(event.data.msg, event.data.url);
+        console.log(event);
 
         let favs = document.querySelectorAll('.fav')
         console.log(favs)
