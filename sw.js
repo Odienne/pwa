@@ -172,9 +172,8 @@ self.addEventListener('message', function (event) {
 
 self.addEventListener('sync', function(event) {
     console.log("test")
-    console.log(window)
-    console.log(window.document)
-    let favs = window.document.querySelectorAll('.fav')
+    console.log(self)
+    let favs = self.document.querySelectorAll('.fav')
     console.log(favs)
 
     fetch("http://localhost:3000/favoris/multiples", {
