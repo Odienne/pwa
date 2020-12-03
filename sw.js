@@ -171,5 +171,6 @@ self.addEventListener('message', function (event) {
 });
 
 self.addEventListener('sync', function(event) {
+    console.log("test")
     self.registration.showNotification("Sync event fired!");
 });
