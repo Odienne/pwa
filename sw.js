@@ -171,10 +171,5 @@ self.addEventListener('message', function (event) {
 });
 
 self.addEventListener('sync', function(event) {
-    if (event.tag == 'myFirstSync') {
-        console.log("COUCOU")
-        console.log("COUCOU")
-        console.log("COUCOU")
-        event.waitUntil(doSomeStuff());
-    }
+    self.registration.showNotification("Sync event fired!");
 });

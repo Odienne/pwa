@@ -115,7 +115,17 @@ h0I7Iblaacawc"
 rage/1.7.3/localforage.min.js"></script>
 <script>
     if ('serviceWorker' in navigator) {
-        navigator.serviceWorker.register("/sw.js").then((reg) => {
+
+        navigator.serviceWorker.register('sw.js').then(function(reg) {
+            return reg.sync.getTags();
+        }).then(function(tags) {
+            if (tags.includes('syncTest')) log("There's already a background sync pending");
+        }).catch(function(err) {
+            log('It broke (probably sync not supported or flag not enabled)');
+            log(err.message);
+        });
+
+       /* navigator.serviceWorker.register("/sw.js").then((reg) => {
             console.log("votre service worker a été enregistré!");
         }).catch((error) => {
             console.error(error);
@@ -124,7 +134,7 @@ rage/1.7.3/localforage.min.js"></script>
         // Then later, request a one-off sync:
         navigator.serviceWorker.ready.then(function(swRegistration) {
             return swRegistration.sync.register('myFirstSync');
-        });
+        });*/
     } else {
         console.warn("Service workers are not supported.");
     }
