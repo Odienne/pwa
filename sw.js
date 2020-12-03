@@ -171,22 +171,17 @@ self.addEventListener('message', function (event) {
 });
 
 self.addEventListener('sync', function(event) {
-    console.log("test")
-    console.log(self)
-    let favs = self.document.querySelectorAll('.fav')
-    console.log(favs)
+    // Get the client.
+    const client = self.clients.get(event.clientId);
+    // Exit early if we don't get the client.
+    // Eg, if it closed.
+    if (!client) return;
 
-    fetch("http://localhost:3000/favoris/multiples", {
-        method: 'POST',
-        headers: {
-            'Accept': 'application/json',
-            'Content-Type': 'application/json'
-        },
-        body: JSON.stringify({favs}),
-    }).then(res => {
-        return res.json();
-    }).then(data => {
-        favs = data;
-    })
+    // Send a message to the client.
+    client.postMessage({
+        msg: "UPDATE",
+        url: event.request.url
+    });
+
     self.registration.showNotification("Sync event fired!");
 });

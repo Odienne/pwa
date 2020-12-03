@@ -7,6 +7,26 @@ $(document).ready(() => {
     submit.on('click', searchImages)
 
     favs = getFavs();
+
+    navigator.serviceWorker.addEventListener('message', event => {
+        console.log(event.data.msg, event.data.url);
+
+        let favs = document.querySelectorAll('.fav')
+        console.log(favs)
+
+        fetch("http://localhost:3000/favoris/multiples", {
+            method: 'POST',
+            headers: {
+                'Accept': 'application/json',
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify({favs}),
+        }).then(res => {
+            return res.json();
+        }).then(data => {
+            favs = data;
+        })
+    });
 })
 
 
