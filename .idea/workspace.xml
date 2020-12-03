@@ -19,10 +19,8 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="22aa267e-040c-4ba7-bfc4-056fc7634e9f" name="Default Changelist" comment="a lot of changes">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="22aa267e-040c-4ba7-bfc4-056fc7634e9f" name="Default Changelist" comment="test sync">
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sw.js" beforeDir="false" afterPath="$PROJECT_DIR$/sw.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -98,13 +96,6 @@
       <workItem from="1605778750478" duration="17661000" />
       <workItem from="1606376641816" duration="14003000" />
       <workItem from="1606981630390" duration="12380000" />
-    </task>
-    <task id="LOCAL-00112" summary="sw">
-      <created>1605788209539</created>
-      <option name="number" value="00112" />
-      <option name="presentableId" value="LOCAL-00112" />
-      <option name="project" value="LOCAL" />
-      <updated>1605788209539</updated>
     </task>
     <task id="LOCAL-00113" summary="sw">
       <created>1605788561110</created>
@@ -442,7 +433,14 @@
       <option name="project" value="LOCAL" />
       <updated>1607001065347</updated>
     </task>
-    <option name="localTasksCounter" value="161" />
+    <task id="LOCAL-00161" summary="test sync">
+      <created>1607001410614</created>
+      <option name="number" value="00161" />
+      <option name="presentableId" value="LOCAL-00161" />
+      <option name="project" value="LOCAL" />
+      <updated>1607001410614</updated>
+    </task>
+    <option name="localTasksCounter" value="162" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -483,7 +481,8 @@
     <MESSAGE value="stockage" />
     <MESSAGE value="a lot of changes + sync and favs" />
     <MESSAGE value="a lot of changes" />
-    <option name="LAST_COMMIT_MESSAGE" value="a lot of changes" />
+    <MESSAGE value="test sync" />
+    <option name="LAST_COMMIT_MESSAGE" value="test sync" />
   </component>
   <component name="WindowStateProjectService">
     <state x="739" y="241" key="#HTTP_Proxy" timestamp="1606397032811">
