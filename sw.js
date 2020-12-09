@@ -165,6 +165,7 @@ self.addEventListener('fetch', function (event) {
 });
 
 self.addEventListener('sync', function(event) {
+    console.log(event.tag)
     if (event.tag === 'sync-fav') {
         self.registration.showNotification("Synchronisation!");
         event.waitUntil(sendData())
