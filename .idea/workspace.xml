@@ -20,6 +20,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="22aa267e-040c-4ba7-bfc4-056fc7634e9f" name="Default Changelist" comment="test sync">
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sw.js" beforeDir="false" afterPath="$PROJECT_DIR$/sw.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -97,14 +98,7 @@
       <workItem from="1606376641816" duration="14003000" />
       <workItem from="1606981630390" duration="12380000" />
       <workItem from="1607451128437" duration="2059000" />
-      <workItem from="1607540524776" duration="6244000" />
-    </task>
-    <task id="LOCAL-00138" summary="stockage">
-      <created>1606377408435</created>
-      <option name="number" value="00138" />
-      <option name="presentableId" value="LOCAL-00138" />
-      <option name="project" value="LOCAL" />
-      <updated>1606377408435</updated>
+      <workItem from="1607540524776" duration="6323000" />
     </task>
     <task id="LOCAL-00139" summary="stockage">
       <created>1606377762539</created>
@@ -442,7 +436,14 @@
       <option name="project" value="LOCAL" />
       <updated>1607552984794</updated>
     </task>
-    <option name="localTasksCounter" value="187" />
+    <task id="LOCAL-00187" summary="test sync">
+      <created>1607553054618</created>
+      <option name="number" value="00187" />
+      <option name="presentableId" value="LOCAL-00187" />
+      <option name="project" value="LOCAL" />
+      <updated>1607553054618</updated>
+    </task>
+    <option name="localTasksCounter" value="188" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
