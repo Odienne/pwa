@@ -166,23 +166,9 @@ self.addEventListener('fetch', function (event) {
 
 self.addEventListener('sync', function(event) {
     if (event.tag === 'sync-fav') {
-     self.active.postMessage(JSON.stringify({test: 'TEST22'}));
-        const client = self.clients.get(event.clientId);
-        // Exit early if we don't get the client.
-        // Eg, if it closed.
-        console.log(client)
-        if (!client) return;
-
-        // Send a message to the client.
-        client.postMessage({
-            msg: "UPDATE",
-        });
-
         self.registration.showNotification("Synchronisation!");
-
         event.waitUntil(sendData())
     }
-
 });
 
 function sendData() {
