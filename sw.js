@@ -171,28 +171,24 @@ self.addEventListener('message', function (event) {
 });
 
 self.addEventListener('sync', function(event) {
-    // Get the client.
-    const client = self.clients.get(event.clientId);
-    // Exit early if we don't get the client.
-    // Eg, if it closed.
-    if (!client) return;
-
-    console.log("event", event)
-
     if (event.tag === 'sync-fav') {
-        //api call
         event.waitUntil(sendData())
     }
-
-    // Send a message to the client.
-    client.postMessage({
-        msg: "UPDATE",
-        url: event.request.url
-    });
 
     self.registration.showNotification("Sync event fired!");
 });
 
 function sendData() {
-    console.log("back online bois")
+    console.log("back online")
+    //send data to api
 }
+
+self.addEventListener('message', function(event){
+    var data = JSON.parse(event.data);
+
+    console.log("SW Received Message:");
+    console.log(data);
+
+    self.test = data.test;
+
+});
