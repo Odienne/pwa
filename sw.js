@@ -172,11 +172,6 @@ self.addEventListener('sync', function(event) {
         console.log(client)
         if (!client) return;
 
-        if (event.tag === 'sync-fav') {
-            //api call
-            event.waitUntil(sendData())
-        }
-
         // Send a message to the client.
         client.postMessage({
             msg: "UPDATE",
