@@ -178,7 +178,6 @@ self.addEventListener('sync', function(event) {
     if (!client) return;
 
     console.log("event", event)
-    console.log(event)
 
     if (event.tag === 'sync-fav') {
         //api call
