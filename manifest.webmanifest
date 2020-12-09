@@ -6,6 +6,7 @@
     "lang": "fr-FR",
     "start_url": "./index.html",
     "display": "minimal-ui",
+    "gcm_sender_id": "370072803732",
     "theme_color": "#456123",
     "background_color": "#456123",
     "icons":
