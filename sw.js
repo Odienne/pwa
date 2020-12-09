@@ -168,19 +168,14 @@ self.addEventListener('sync', function(event) {
     console.log(event.tag)
     if (event.tag === 'sync-fav') {
         self.registration.showNotification("Synchronisation!");
-        var e = new CustomEvent('searchFavs');
-        //event.waitUntil(sendData())
+        event.waitUntil(sendData())
     }
 });
 
-function eventHandler(e) {
-    console.log(e)
-}
 function sendData() {
     console.log("back online")
     //send data to api
 }
-
 
 
 self.addEventListener('message', function(event){
