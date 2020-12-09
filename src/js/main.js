@@ -119,7 +119,7 @@ function addToFav() {
         let message = added ? "Favori ajouté" : "Favori enlevé";
         sendNotif(message)
     }).catch(error => {
-            console.error("error", error)
+            console.warn("error", error)
         }
     )
 }
