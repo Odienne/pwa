@@ -8,25 +8,25 @@ $(document).ready(() => {
 
     favs = getFavs();
 
-    navigator.serviceWorker.addEventListener('message', event => {
-        console.log(event);
-
-        let favs = document.querySelectorAll('.fav')
-        console.log(favs)
-
-        fetch("http://localhost:3000/favoris/multiples", {
-            method: 'POST',
-            headers: {
-                'Accept': 'application/json',
-                'Content-Type': 'application/json'
-            },
-            body: JSON.stringify({favs}),
-        }).then(res => {
-            return res.json();
-        }).then(data => {
-            favs = data;
-        })
-    });
+    // navigator.serviceWorker.addEventListener('message', event => {
+    //     console.log(event);
+    //
+    //     let favs = document.querySelectorAll('.fav')
+    //     console.log(favs)
+    //
+    //     fetch("http://localhost:3000/favoris/multiples", {
+    //         method: 'POST',
+    //         headers: {
+    //             'Accept': 'application/json',
+    //             'Content-Type': 'application/json'
+    //         },
+    //         body: JSON.stringify({favs}),
+    //     }).then(res => {
+    //         return res.json();
+    //     }).then(data => {
+    //         favs = data;
+    //     })
+    // });
 })
 
 
@@ -118,7 +118,10 @@ function addToFav() {
         favs = data;
         let message = added ? "Favori ajouté" : "Favori enlevé";
         sendNotif(message)
-    })
+    }).catch(error => {
+            console.error(error)
+        }
+    )
 }
 
 function inFav(id) {

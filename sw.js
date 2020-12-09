@@ -177,6 +177,10 @@ self.addEventListener('sync', function(event) {
     // Eg, if it closed.
     if (!client) return;
 
+    if (event.tag === 'sync-fav') {
+        //api call
+    }
+
     // Send a message to the client.
     client.postMessage({
         msg: "UPDATE",
