@@ -179,6 +179,7 @@ self.addEventListener('sync', function(event) {
 
     if (event.tag === 'sync-fav') {
         //api call
+        event.waitUntil(sendData())
     }
 
     // Send a message to the client.
@@ -189,3 +190,7 @@ self.addEventListener('sync', function(event) {
 
     self.registration.showNotification("Sync event fired!");
 });
+
+function sendData() {
+    console.log("test")
+}

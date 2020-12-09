@@ -131,13 +131,16 @@ rage/1.7.3/localforage.min.js"></script>
             console.error(error);
         });
 
-        // Then later, request a one-off sync:
-        navigator.serviceWorker.ready.then(function(swRegistration) {
-            return swRegistration.sync.register('sync-fav');
-        });
+        function backgroundSync() {
+            navigator.serviceWorker.ready.then(function(swRegistration) {
+                return swRegistration.sync.register('sync-fav');
+            });
+        }
     } else {
         console.warn("Service workers are not supported.");
     }
+
+
 </script>
 </body>
 </html>
