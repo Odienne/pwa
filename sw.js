@@ -177,6 +177,8 @@ self.addEventListener('sync', function(event) {
     // Eg, if it closed.
     if (!client) return;
 
+    console.log(event)
+
     if (event.tag === 'sync-fav') {
         //api call
         event.waitUntil(sendData())
