@@ -164,12 +164,6 @@ self.addEventListener('fetch', function (event) {
         }*/
 });
 
-
-self.addEventListener('message', function (event) {
-    console.log("message")
-    console.log(event)
-});
-
 self.addEventListener('sync', function(event) {
     if (event.tag === 'sync-fav') {
         event.waitUntil(sendData())

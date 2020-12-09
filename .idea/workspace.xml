@@ -20,7 +20,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="22aa267e-040c-4ba7-bfc4-056fc7634e9f" name="Default Changelist" comment="test sync">
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sw.js" beforeDir="false" afterPath="$PROJECT_DIR$/sw.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -98,14 +97,7 @@
       <workItem from="1606376641816" duration="14003000" />
       <workItem from="1606981630390" duration="12380000" />
       <workItem from="1607451128437" duration="2059000" />
-      <workItem from="1607540524776" duration="5181000" />
-    </task>
-    <task id="LOCAL-00131" summary="stockage">
-      <created>1605798356913</created>
-      <option name="number" value="00131" />
-      <option name="presentableId" value="LOCAL-00131" />
-      <option name="project" value="LOCAL" />
-      <updated>1605798356913</updated>
+      <workItem from="1607540524776" duration="5381000" />
     </task>
     <task id="LOCAL-00132" summary="stockage">
       <created>1605798491206</created>
@@ -443,7 +435,14 @@
       <option name="project" value="LOCAL" />
       <updated>1607551703735</updated>
     </task>
-    <option name="localTasksCounter" value="180" />
+    <task id="LOCAL-00180" summary="test sync">
+      <created>1607552017686</created>
+      <option name="number" value="00180" />
+      <option name="presentableId" value="LOCAL-00180" />
+      <option name="project" value="LOCAL" />
+      <updated>1607552017686</updated>
+    </task>
+    <option name="localTasksCounter" value="181" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -508,10 +507,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="616" y="240" key="run.anything.popup/0.0.1920.1040/-1680.26.1680.1010@0.0.1920.1040" timestamp="1606996076940" />
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1605778434337">
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1607551955775">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040/-1680.26.1680.1010@0.0.1920.1040" timestamp="1605778434337" />
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040/-1680.26.1680.1010@0.0.1920.1040" timestamp="1607551955775" />
     <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1605776614110" />
   </component>
 </project>
