@@ -128,13 +128,8 @@ rage/1.7.3/localforage.min.js"></script>
        navigator.serviceWorker.register("/sw.js").then((reg) => {
             console.log("votre service worker a été enregistré!");
 
-           reg.pushManager.subscribe({userVisibleOnly: true}).then(function(sub) {
-
-               console.log('endpoint:', sub.endpoint);
                reg.active.postMessage(JSON.stringify({test: 'TEST'}));
-               console.log("Posted message");
 
-           });
         }).catch((error) => {
             console.error(error);
         });
