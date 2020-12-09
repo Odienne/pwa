@@ -188,7 +188,7 @@ function sendMessage(message) {
                 resolve(event.data);
             }
         };
-        navigator.serviceWorker.controller.postMessage(message, [messageChannel.port2]);
+        self.controller.postMessage(message, [messageChannel.port2]);
     });
 }
 
