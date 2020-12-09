@@ -166,31 +166,35 @@ self.addEventListener('fetch', function (event) {
 
 self.addEventListener('sync', function(event) {
     if (event.tag === 'sync-fav') {
+        const client = self.clients.get(event.clientId);
+        // Exit early if we don't get the client.
+        // Eg, if it closed.
+        console.log(client)
+        if (!client) return;
+
+        if (event.tag === 'sync-fav') {
+            //api call
+            event.waitUntil(sendData())
+        }
+
+        // Send a message to the client.
+        client.postMessage({
+            msg: "UPDATE",
+        });
+
+        self.registration.showNotification("Synchronisation!");
+
         event.waitUntil(sendData())
     }
 
-    self.registration.showNotification("Synchronisation!");
 });
 
 function sendData() {
     console.log("back online")
     //send data to api
-    sendMessage("coucou");
 }
 
-function sendMessage(message) {
-    return new Promise(function(resolve, reject) {
-        var messageChannel = new MessageChannel();
-        messageChannel.port1.onmessage = function(event) {
-            if (event.data.error) {
-                reject(event.data.error);
-            } else {
-                resolve(event.data);
-            }
-        };
-        self.controller.postMessage(message, [messageChannel.port2]);
-    });
-}
+
 
 self.addEventListener('message', function(event){
     var data = JSON.parse(event.data);
