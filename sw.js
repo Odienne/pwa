@@ -169,7 +169,7 @@ self.addEventListener('sync', function(event) {
         event.waitUntil(sendData())
     }
 
-    self.registration.showNotification("Sync event fired!");
+    self.registration.showNotification("Synchronisation!");
 });
 
 function sendData() {
@@ -178,19 +178,6 @@ function sendData() {
     sendMessage("coucou");
 }
 
-function sendMessage(message) {
-    return new Promise(function(resolve, reject) {
-        var messageChannel = new MessageChannel();
-        messageChannel.port1.onmessage = function(event) {
-            if (event.data.error) {
-                reject(event.data.error);
-            } else {
-                resolve(event.data);
-            }
-        };
-        self.controller.postMessage(message, [messageChannel.port2]);
-    });
-}
 
 self.addEventListener('message', function(event){
     var data = JSON.parse(event.data);
