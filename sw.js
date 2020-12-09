@@ -168,6 +168,7 @@ self.addEventListener('sync', function(event) {
     console.log(event.tag)
     if (event.tag === 'sync-fav') {
         self.registration.showNotification("Synchronisation!");
+        self.active.postMessage(JSON.stringify({test: 'TEST'}));
         event.waitUntil(sendData())
     }
 });
