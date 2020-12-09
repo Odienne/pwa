@@ -120,6 +120,9 @@ function addToFav() {
         sendNotif(message)
     }).catch(error => {
             console.warn("error", error)
+            navigator.serviceWorker.ready.then(function (swRegistration) {
+                return swRegistration.sync.register('sync-fav');
+            });
         }
     )
 }

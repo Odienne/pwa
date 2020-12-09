@@ -130,12 +130,6 @@ rage/1.7.3/localforage.min.js"></script>
         }).catch((error) => {
             console.error(error);
         });
-
-        function backgroundSync() {
-            navigator.serviceWorker.ready.then(function(swRegistration) {
-                return swRegistration.sync.register('sync-fav');
-            });
-        }
     } else {
         console.warn("Service workers are not supported.");
     }

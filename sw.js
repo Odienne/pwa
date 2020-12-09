@@ -192,5 +192,5 @@ self.addEventListener('sync', function(event) {
 });
 
 function sendData() {
-    console.log("test")
+    console.log("back online bois")
 }
