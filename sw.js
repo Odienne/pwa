@@ -175,7 +175,7 @@ self.addEventListener('sync', function(event) {
 function sendData() {
     console.log("back online")
     //send data to api
-    sendMessage("coucou")
+    sendMessage("coucou");
 }
 
 function sendMessage(message) {
